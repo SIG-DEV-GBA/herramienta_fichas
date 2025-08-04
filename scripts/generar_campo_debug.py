@@ -3,7 +3,7 @@ import os
 import json
 import logging
 from datetime import datetime
-from scripts.embedding_manager import buscar_chunks_relevantes
+from scripts.semantic_search import buscar_chunks_relevantes
 from scripts.generador_ficha import generar_campo_ficha, cargar_instrucciones, cargar_tipos_ayuda
 from dotenv import load_dotenv
 

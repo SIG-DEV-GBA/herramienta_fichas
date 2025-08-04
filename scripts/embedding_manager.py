@@ -5,6 +5,8 @@ from openai import OpenAI
 from typing import List
 from dotenv import load_dotenv
 
+from .openai_retry import call_with_retry
+
 # Cargar API key desde .env
 load_dotenv()
 
@@ -23,10 +25,12 @@ def generar_embeddings(chunks: List[str], doc_id: str) -> None:
     
     for i, chunk in enumerate(chunks):
         try:
-            embedding = client.embeddings.create(
+            resp = call_with_retry(
+                client.embeddings.create,
                 model="text-embedding-3-small",
-                input=chunk
-            ).data[0].embedding
+                input=chunk,
+            )
+            embedding = resp.data[0].embedding
 
             chunk_id = f"{doc_id}_chunk_{i}"
 
