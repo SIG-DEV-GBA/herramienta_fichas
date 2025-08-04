@@ -23,13 +23,11 @@ def generar_embeddings(chunks: List[str], doc_id: str) -> None:
 
     logging.info(f"Generando embeddings para {len(chunks)} chunks del documento: {doc_id}")
     
+    embedding_fn = call_with_retry(client.embeddings.create)
+
     for i, chunk in enumerate(chunks):
         try:
-            resp = call_with_retry(
-                client.embeddings.create,
-                model="text-embedding-3-small",
-                input=chunk,
-            )
+            resp = embedding_fn(model="text-embedding-3-small", input=chunk)
             embedding = resp.data[0].embedding
 
             chunk_id = f"{doc_id}_chunk_{i}"

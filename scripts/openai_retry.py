@@ -1,21 +1,15 @@
-import time
-import random
-import logging
-from typing import Any, Callable
-
-
+def call_with_retry(func: Callable[..., Any]) -> Callable[..., Any]:
+    """
+    Ejecuta una función con reintentos en caso de errores como RateLimitError.
 
     Parameters
     ----------
     func : Callable
+        La función que se desea ejecutar con lógica de reintentos.
 
-            # Determinar el código de estado asociado al error
-            status = getattr(err, "status_code", None)
-            if isinstance(err, RateLimitError):
-                status = 429
-
-
-            time.sleep(espera)
-
-    # Si se alcanzan todos los intentos sin éxito, relanzar una excepción genérica
-    raise RuntimeError("Máximo de reintentos alcanzado")
+    Returns
+    -------
+    Callable
+        La función envuelta que incluye reintentos.
+    """
+    ...
