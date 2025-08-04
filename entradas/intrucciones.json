@@ -1,11 +1,13 @@
 {
   "0. INSTRUCCIONES GENERALES": [
-    "Todos los textos deben redactarse siguiendo las instrucciones del proyecto Fichas Miguel.",
+    "Todos los textos deben redactarse siguiendo estrictamente las instrucciones del proyecto Fichas Miguel.",
     "Aplicar los principios de claridad, brevedad y orden lógico.",
+    "Responde abriendo el modo editor",
+    "Todos los nombres de campo deben ir en negrita, colocados entre dobles asteriscos (**) y seguidos de dos puntos.",
     "Reescribir los contenidos de los apartados Beneficiarios, Resolución y Requisitos de acceso aplicando el documento 'Lenguaje Claro Aragón' siempre que sea posible. No se debe alterar sustancialmente el contenido, sino adaptar la redacción a un estilo claro, directo y comprensible."
   ],
   "1. NOMBRE DE LA AYUDA": [
-    "Debe reflejar literalmente el título oficial de la ayuda.",
+    "Debe reflejar resumidamente el título oficial de la ayuda.",
     "Debe incluir el año de la convocatoria si figura en el documento.",
     "Si es una convocatoria plurianual, indicar el año correspondiente."
   ],
@@ -33,17 +35,18 @@
   ],
   "5. FECHAS (Inicio / Fin / Publicación BDNS o BOP)": [
     "Fecha de inicio: el día siguiente a la publicación en el boletín o BDNS, salvo que se indique expresamente otra.",
-    "Fecha de fin: debe expresarse siempre como 'Hasta (dd/mm/aaaa)'.",
+    "Fecha de fin: debe expresarse en el formato 'dd/mm/aaaa'.",
     "La fecha de publicación debe corresponder a la del BOP o BDNS, nunca inventarse ni estimarse."
   ],
   "6. ÁMBITO TERRITORIAL": [
     "Indicar siempre el ámbito geográfico de aplicación: municipio, provincia, comunidad autónoma o estatal."
   ],
   "7. ADMINISTRACIÓN CONVOCANTE": [
-    "Nombre completo del ayuntamiento, comunidad autónoma o ministerio que convoca la ayuda."
+    "Nombre completo del ayuntamiento, comunidad autónoma o ministerio que convoca la ayuda.",
+    "Debe incluir entre paréntesis() la provincia a la que pertenece"
   ],
   "8. PLAZO DE PRESENTACIÓN": [
-    "Debe expresarse exclusivamente con la fórmula: 'Hasta (fecha de fin)'.",
+    "Debe expresarse exclusivamente con la fórmula: 'Hasta fecha de fin'.",
     "Si hay plazos extraordinarios, deben indicarse también con esa misma fórmula.",
     "Nunca deben expresarse plazos relativos (ej.: 15 días desde...)."
   ],
@@ -60,19 +63,25 @@
   ],
   "11. DESCRIPCIÓN (ANTES 'OBJETO')": [
     "Debe desarrollarse una descripción exhaustiva de la subvención.",
-    "Es obligatorio incluir el desglose concreto del contenido de cada modalidad de ayuda (por ejemplo: qué gastos cubre, requisitos específicos, finalidad de cada prestación).",
+    "Es obligatorio incluir el desglose concreto del contenido de cada modalidad de ayuda (por ejemplo: qué gastos cubre, requisitos específicos, finalidad de cada prestación, modo de pago si figura explícitamente).",
     "Puede adaptarse el lenguaje para hacerlo más fluido y comprensible, pero sin omitir ninguna información relevante del texto original.",
     "Debe incluir incompatibilidades (es decir, ayudas duplicadas, concurrencia con otras subvenciones, etc.).",
     "No deben incluirse cantidades económicas ni importes aquí (reservados al campo 'Cuantía')."
   ],
   "12. CUANTÍA": [
-    "Debe detallar cantidades y modalidades contempladas.",
-    "Si hay tablas con tramos, umbrales o escalas económicas deben seguir el siguiente formato:",
-    "Tres columnas como máximo, con encabezados adaptados al documento de origen.",
-    "Columnas separadas por puntos suspensivos (...).",
-    "Importes alineados a la derecha, con coma decimal, dos decimales y símbolo € al final.",
-    "No debe incluirse aquí ninguna fórmula general si el documento contiene cifras específicas.",
-    "Aplica formato accesible a todos los tramos, umbrales o escalas económicas de la ficha. Utiliza puntos suspensivos entre columnas, alineación visual clara, coma decimal, dos decimales y símbolo € al final de cada cifra. Adapta encabezados y contenido a la estructura del documento original."
+    "Debe detallar todas las cantidades económicas establecidas en la normativa, sin omitir tramos ni porcentajes si están definidos.",
+    "No deben incluirse fórmulas genéricas si el documento contiene cifras concretas.",
+    "No debe incluirse el importe total de la subvención.",
+    "Las tablas económicas deben seguir este formato visual obligatorio:",
+    "- Columnas separadas por puntos suspensivos (...).",
+    "- Encabezados adaptados al contenido del documento original, sin usar etiquetas fijas como '% IPREM' si no figuran expresamente.",
+    "- Cifras alineadas a la derecha, con coma decimal, dos decimales y símbolo € al final.",
+    "- No hay un número fijo de columnas: debe adaptarse al contenido del documento.",
+    "- Cada fila de la tabla debe ocupar una única línea de texto, sin saltos intermedios.",
+    "- Se recomienda evitar tablas si hay pocos tramos; usar listas estructuradas si mejora la comprensión.",
+    "No debe mencionarse aquí ninguna información sobre justificación del gasto, salvo que se refiera al cálculo de los importes.",
+    "Si se menciona un máximo por beneficiario, debe también reflejarse obligatoriamente en el campo 'Importe máximo'.",
+    "Se prioriza una presentación clara y accesible, conforme a las pautas del documento 'Lenguaje Claro Aragón'."
   ],
   "13. IMPORTE MÁXIMO": [
     "Debe incluirse la cantidad económica máxima que puede percibir el solicitante por cada modalidad de ayuda.",
@@ -80,53 +89,53 @@
     "Debe explicarse con claridad, por tipo de servicio o prestación, según la normativa."
   ],
   "14. RESOLUCIÓN": [
-    "Incluir únicamente el plazo máximo de resolución y notificación.",
+    "Incluir el plazo máximo de resolución y notificación.",
+    "Incluir modo de comunicación si figura expresamente.",
     "Comprobar si el silencio administrativo es positivo o negativo según el contenido del documento.",
     "Si no se menciona expresamente, se entenderá como silencio administrativo negativo, de acuerdo con el artículo 24 de la Ley 39/2015."
   ],
   "15. DOCUMENTOS A PRESENTAR": [
     "Usar la estructura: 'La documentación a presentar es la siguiente:' seguido de una lista con guiones.",
     "Debe añadirse la lista completa y ordenada de todos los documentos mencionados en la documentación oficial.",
-    "La enumeración debe seguir este orden: primero los documentos generales, y después los documentos específicos según el tipo de ayuda."
+    "La enumeración debe seguir este orden: primero los documentos generales, y después los documentos específicos según el tipo de ayuda.",
+    "Debe indicarse cada documento concreto en una línea distinta, evitando agrupaciones de documentos similares.",
+    "Prohibido realizar menciones explícitas a Anexos"
   ],
-  "16. PUBLICACIÓN NORMATIVA": [
-    "Formato obligatorio: 'Véase en el apartado Normativa el/la extracto y/o convocatoria y/o bases -BOP (nombre de la provincia o comunidad autónoma o país) núm. (número), (dd/mm/aaaa) y/o Base de Datos Nacional de Subvenciones Nº. (número), (dd/mm/aaaa)-.'.",
-    "En caso de un solo documento, elegir si es extracto, convocatoria o bases, y adaptar la fórmula inicial.",
-    "En caso de dos documentos, incluirlos en ese orden. Si hay los tres, indicar los tres en orden.",
-    "Debe figurar siempre el punto final."
-  ],
-  "17. NORMATIVA REGULADORA": [
+  "16. NORMATIVA REGULADORA": [
     "Debe presentarse en forma de lista estructurada.",
     "Cada entrada comienza con un guion y expresa literalmente el título del documento oficial.",
     "Debe figurar siempre el punto al final de cada oración.",
+    "Comprobar si el documento pertenece a algún Boletín revisando el encabezamiento o bordes de la página, no incluir número de Boletín si no figura expresamente.",
     "Dividir por bloques según la naturaleza del documento: Extracto, Convocatoria, Bases, Otros acuerdos.",
-    "Añadir al final de cada línea el Boletín o Nº BDNS si lo hay."
+    "Añadir al final de cada línea el Boletín o Nº BDNS, al que pertenece el documento, si lo hay.",
+    "El formato obligatorio de mención de Boletín o BDNS es el siguiente: BOP (nombre de la provincia o comunidad autónoma o país) núm. (número), (dd/mm/aaaa) y/o Base de Datos Nacional de Subvenciones Nº. (número), (dd/mm/aaaa)."
   ],
-  "18. REFERENCIA LEGISLATIVA": [
+  "17. REFERENCIA LEGISLATIVA": [
     "Se presenta como lista con guiones por cada disposición legal.",
     "Cada línea debe contener el nombre oficial completo de la norma, sin artículos concretos.",
     "Incluir fecha de aprobación y boletín oficial si aparece.",
     "No incluir enlaces ni notas explicativas.",
     "Debe figurar siempre el punto final."
   ],
-  "19. LUGAR Y FORMA DE PRESENTACIÓN": [
-    "Debe dividirse exactamente en dos bloques: 'Presencialmente en:' y 'Electrónicamente en:'.",
-    "Incluir el nombre completo del ayuntamiento o institución convocante, dirección postal y teléfono.",
-    "Incluir URL exacta de la sede electrónica oficial.",
+  "18. LUGAR Y FORMA DE PRESENTACIÓN": [
+    "Debe dividirse exactamente en dos bloques:\n'Presencialmente en:'\n'Electrónicamente en:'.",
+    "Incluir el nombre completo del ayuntamiento o institución convocante, dirección postal, fax, dirección correo electrónico y teléfono.",
+    "Incluir dirección de sede electrónica y URL exacta de la sede electrónica oficial.",
+    "Incluir siempre en el apartado ´Presencialmente en´el siguiente texto:\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional.",
     "Debe figurar la referencia al Registro Electrónico Común (REC – Red SARA).",
     "Está prohibido utilizar iconos o encabezados decorativos como 📥 u otros."
   ],
-  "20. OTROS DATOS": [
+  "19. OTROS DATOS": [
     "El campo 'OTROS DATOS' debe colocarse siempre al final de la ficha, después del bloque 'Lugar y forma de presentación'.",
     "Debe incluir los siguientes subapartados, en este orden fijo y obligatorio:",
-    "1. USUARIO: Nombre y apellidos del responsable de la ficha.",
-    "2. FECHA: Fecha de elaboración o entrega (puede figurar como / /2025).",
-    "3. FRASE PARA PUBLICITAR: Solo si la ayuda es estatal, autonómica o provincial. Debe consistir en un párrafo explicativo sobre qué es la ayuda y a quién va dirigida.",
+    "1. USUARIO: Debe completarse automáticamente con el nombre exacto de la carpeta activa en la que se genera la ficha, escrito en mayúsculas. Esta asignación debe realizarse de forma dinámica, en función de la carpeta desde la que se haya solicitado la ficha. No se deben usar valores por defecto ni nombres genéricos.",
+    "2. FECHA: Debe figurar automáticamente la fecha del día en que se realiza la ficha.",
+    "3. FRASE PARA PUBLICITAR: Solo si la ayuda es estatal, autonómica o provincial. Genera 3 versiones de una frase breve e informal (máx. 20 palabras) que informe sobre los detalles clave de la ayuda o subvención (beneficiarios, cobertura o cuantía), sin incitar a la compra, usando un tono cercano y un llamado a la acción claro (por ejemplo, “Infórmate”, “Solicita”, “Descarga las bases”).",
     "No se deben añadir otros subapartados ni reordenar los existentes.",
     "El título del bloque debe figurar exactamente como 'Otros datos', sin variantes ni cambios tipográficos.",
     "El formato debe mantenerse uniforme en cuanto a espaciado, sangrado y estilo con el resto de la ficha."
   ],
-  "21. FORMATOS, REGLAS Y VALIDACIONES GENERALES": [
+  "20. FORMATOS, REGLAS Y VALIDACIONES GENERALES": [
     "Todos los campos del modelo oficial deben mantenerse presentes y completos, salvo que no existan datos en el documento base.",
     "No se puede llamar completa a una ficha si falta algún campo obligatorio.",
     "No debe usarse ningún icono en títulos o bloques (por ejemplo: 📥, ✅, etc.).",
@@ -135,6 +144,21 @@
     "BDNS debe verificarse en la web oficial: https://www.pap.hacienda.gob.es/bdnstrans/GE/es/index.",
     "Está prohibido añadir información no presente en los documentos oficiales, pero sí puede estructurarse y redactarse con mayor claridad.",
     "En ayudas estatales, autonómicas o provinciales debe incluirse obligatoriamente la FRASE PARA PUBLICITAR en el campo 'OTROS DATOS'.",
-    "Si se menciona IPREM, SMI o IRSC, debe añadirse su valor actualizado en el campo que tenga mayor prioridad según este orden: 1º Beneficiarios, 2º Requisitos de acceso, 3º Descripción, 4º Plazo de presentación, 5º Cuantía, 6º Importe máximo, 7º Documentos a presentar."
+    "Si se menciona IPREM, SMI o IRSC, debe añadirse su valor actualizado en el campo que tenga mayor prioridad según este orden: 1º Beneficiarios, 2º Requisitos de acceso, 3º Descripción, 4º Plazo de presentación, 5º Cuantía, 6º Importe máximo, 7º Documentos a presentar.",
+    "Agregar la siguiente información si se menciona el IPREM, SMI, o IRSC:\n* IPREM 2025 (Indicador Público de Renta de Efectos Múltiples): 20 euros/día - 600 euros/mes - 7.200 euros/año (12 pagas) - 8.400 euros/año (14 pagas).\n\n* SMI 2025 (Salario Mínimo Interprofesional): 39,47 euros/día - 1.184 euros/mes - 16.576 euros/año (14 pagas).\n\n* IRSC 2025 (Indicador de Renta de Suficiencia de Cataluña): 778,49 euros/mes - 9.341,92 euros/año."
+  ],
+  "21. COSTES NO SUBVENCIONABLES": [
+    "Este campo recoge todos aquellos gastos que expresamente no pueden financiarse con la ayuda, tal como se indica en la normativa de la convocatoria.",
+    "Deben incluirse conceptos como: gastos fiscales (IVA, impuestos), productos no esenciales, adquisiciones previas sin justificación, duplicidad de facturas, gastos fuera de plazo o no relacionados con la finalidad de la ayuda, entre otros.",
+    "También deben incorporarse en este campo las incompatibilidades específicas que figuren bajo epígrafes como 'Incompatibilidades' o similares, siempre que se refieran a la exclusión por ayudas duplicadas, concurrencia con otras prestaciones o situaciones de renuncia injustificada a derechos previos (por ejemplo, pensiones o ayudas públicas).",
+    "No deben incluirse aquí incompatibilidades generales sobre otras subvenciones: esas deben ir exclusivamente en el campo 'Descripción'.",
+    "La redacción debe ser clara, ordenada y agrupada por tipo de exclusión, evitando repeticiones innecesarias con el resto de la ficha."
+  ],
+  "22. CRITERIOS DE CONCESIÓN": [
+    "Este campo debe recoger los criterios objetivos de valoración establecidos para la concesión de la ayuda.",
+    "Deben identificarse expresamente los sistemas de baremación, puntuación, estándares de prioridad o cualquier otro mecanismo que determine el orden de prelación entre solicitudes.",
+    "Solo debe completarse con información contenida de forma explícita en el documento oficial de la convocatoria o sus anexos.",
+    "Si existe un baremo detallado por puntos o tramos de puntuación, debe explicarse de forma clara y estructurada, sin añadir interpretaciones externas.",
+    "Si no hay baremo ni criterios de prioridad mencionados en el documento, este campo debe dejarse en blanco."
   ]
 }

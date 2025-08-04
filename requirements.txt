@@ -1,3 +1,11 @@
+python-dotenv
+openai
+chromadb
+tiktoken
+langchain
 python-docx
 pymupdf
 requests
+unstructured
+matplotlib
+pandas

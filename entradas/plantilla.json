@@ -1,0 +1,57 @@
+{
+  "denominacion_normativa_nombre_ayuda": "",
+  "portales": [],
+  "categoria": [],
+  "tipo_ayuda": [],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "",
+  "administracion": "",
+  "plazo_presentacion": "",
+  "destinatarios": "",
+  "requisitos_acceso": "",
+  "descripcion": "",
+  "cuantia": [
+    {
+      "concepto": "",
+      "valor": "",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "",
+  "resolucion": "",
+  "documentos_presentar": [
+    {
+      "clave": "",
+      "valor": ""
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": ""
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": ""
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "",
+  "fecha": "",
+  "frase_publicitaria": ""
+}
+

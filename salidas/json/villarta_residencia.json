@@ -1,0 +1,80 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Aprobación del Reglamento interno de la residencia de mayores de Villarta de los Montes 2025",
+  "portales": [
+    "mayores"
+  ],
+  "categoria": [
+    "servicios"
+  ],
+  "tipo_ayuda": [
+    "Servicios"
+  ],
+  "descripcion": "El Reglamento interno de la residencia de mayores de Villarta de los Montes establece las normas de funcionamiento, organización y convivencia del centro, así como los derechos y deberes de los residentes. Incluye disposiciones sobre el perfil de acceso, requisitos de admisión, ingreso, ocupación y tarifas, así como el sistema de recogida de sugerencias y resolución de quejas.",
+  "fecha_inicio": "04/06/2025",
+  "fecha_fin": "",
+  "fecha_publicacion": "03/06/2025",
+  "ambito_territorial": "Villarta de los Montes, Badajoz",
+  "administracion": "Ayuntamiento de Villarta de los Montes",
+  "plazo_presentacion": "",
+  "requisitos_acceso": "Para ser beneficiario de una plaza en la residencia de mayores de Villarta de los Montes, es necesario cumplir con los requisitos de edad, estado de dependencia y no padecer enfermedades que impidan la convivencia. Además, se requiere ser español o miembro de la Unión Europea y haber residido en Extremadura al menos dos años antes de la solicitud, salvo excepciones.",
+  "destinatarios": "Personas mayores de 65 años, pensionistas de 60 años, pensionistas de 50 años con discapacidad, y personas reconocidas como dependientes por el órgano competente.",
+  "cuantia": [
+    {
+      "concepto": "Tarifas según grado de dependencia y necesidades de atención",
+      "valor": "Variable",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Tarifa sellada por el SEPAD",
+      "cantidad": "Según resolución"
+    }
+  ],
+  "costes_no_subvencionables": "El material de uso personal, costes de excursiones programadas, servicios prestados por profesionales ajenos al centro y otros gastos no especificados en el reglamento no están incluidos en el precio de la residencia.",
+  "resolucion": "El plazo máximo de resolución y notificación es de 10 días a partir de la notificación de la sanción. El silencio administrativo se considera negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Solicitud",
+      "valor": "Modelo oficial"
+    },
+    {
+      "clave": "Documentación",
+      "valor": "Correspondiente según requisitos"
+    },
+    {
+      "clave": "Certificado médico",
+      "valor": "Estado físico y psíquico"
+    },
+    {
+      "clave": "Acuse de recibo",
+      "valor": "Del Reglamento"
+    }
+  ],
+  "publicacion_normativa": [
+    {
+      "clave": "BOP",
+      "valor": "Badajoz núm. 104, 03/06/2025"
+    }
+  ],
+  "normativa_reguladora": "Ley 2/1994, de 28 de abril, de Asistencia Social Geriátrica; Decreto 298/2015, de 20 de noviembre; Ley 7/1985, de 2 de abril, Reguladora de las Bases de Régimen Local; Decreto 88/1996, de 4 de junio; Ley 39/2006, de 14 de diciembre.",
+  "referencia_legislativa": "Ley 2/1994, de Asistencia Social Geriátrica; Decreto 298/2015, de Regulación de Centros de Atención a personas mayores; Ley 7/1985, de Bases de Régimen Local; Decreto 88/1996, de acceso a centros residenciales; Ley 39/2006, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia.",
+  "usuario": "",
+  "fecha": "",
+  "organismo": "Ayuntamiento de Villarta de los Montes",
+  "frase_publicitaria": "",
+  "lugares_presentacion": {
+    "online": [
+      {
+        "clave": "Sede electrónica",
+        "valor": "https://villartadelosmontes.sedelectronica.es/"
+      }
+    ],
+    "presencial": [
+      {
+        "clave": "Ayuntamiento",
+        "valor": "Plaza del Ayuntamiento, 1, 06690 Villarta de los Montes, Badajoz"
+      }
+    ]
+  }
+}
