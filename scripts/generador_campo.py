@@ -7,7 +7,7 @@ from typing import List
 from .openai_retry import call_with_retry
 
 load_dotenv()
-client = OpenAI()
+client = OpenAI(max_retries=0)
 
 # Cargar instrucciones globales (una sola vez)
 def cargar_instrucciones(ruta: str = "entradas/intrucciones.json") -> dict:

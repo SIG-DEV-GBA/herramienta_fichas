@@ -11,7 +11,7 @@ from .openai_retry import call_with_retry
 load_dotenv()
 
 # Configuración
-client = OpenAI()
+client = OpenAI(max_retries=0)
 chroma_client = chromadb.Client()
 CHROMA_COLLECTION = "documentos_legales"
 

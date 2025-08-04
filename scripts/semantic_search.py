@@ -24,7 +24,7 @@ from .openai_retry import call_with_retry
 load_dotenv()
 
 # Cliente de OpenAI para generar embeddings de las consultas
-client = OpenAI()
+
 
 # Cliente de Chroma para almacenar y consultar los embeddings
 chroma_client = chromadb.Client()
