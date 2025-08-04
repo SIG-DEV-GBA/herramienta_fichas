@@ -19,6 +19,8 @@ import chromadb
 from openai import OpenAI
 from dotenv import load_dotenv
 
+from .openai_retry import call_with_retry
+
 load_dotenv()
 
 # Cliente de OpenAI para generar embeddings de las consultas
@@ -41,10 +43,12 @@ def buscar_chunks_relevantes(campo: str, doc_id: str, top_n: int = 10) -> List[s
     """
     try:
         # Embedding de la consulta
-        embedding = client.embeddings.create(
+        embedding_resp = call_with_retry(
+            client.embeddings.create,
             model="text-embedding-3-small",
-            input=campo
-        ).data[0].embedding
+            input=campo,
+        )
+        embedding = embedding_resp.data[0].embedding
 
         # Recuperar colección y buscar
         collection = chroma_client.get_or_create_collection(name=CHROMA_COLLECTION)
