@@ -4,8 +4,10 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
 
+from .openai_retry import call_with_retry
+
 load_dotenv()
-client = OpenAI()
+client = OpenAI(max_retries=0)
 
 # Cargar instrucciones globales (una sola vez)
 def cargar_instrucciones(ruta: str = "entradas/intrucciones.json") -> dict:
@@ -76,13 +78,14 @@ Usa exclusivamente los siguientes fragmentos para construir tu respuesta. Si no 
 - Si no hay suficiente información en los fragmentos, devuelve exactamente: ""
 """
 
-        respuesta = client.chat.completions.create(
+        respuesta = call_with_retry(
+            client.chat.completions.create,
             model="gpt-4o",
             messages=[
                 {"role": "system", "content": "Especialista en redacción legal estructurada para automatización de ayudas públicas. No debes inventar contenido bajo ningún concepto."},
                 {"role": "user", "content": user_prompt.strip()}
             ],
-            temperature=0.2
+            temperature=0.2,
         )
 
         return respuesta.choices[0].message.content.strip()
