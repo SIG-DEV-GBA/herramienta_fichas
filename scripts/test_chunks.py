@@ -1,5 +1,5 @@
 import sys
-from scripts.embedding_manager import buscar_chunks_relevantes
+from scripts.semantic_search import buscar_chunks_relevantes
 
 DOC_ID = "documento_001"
 TOP_N = 20

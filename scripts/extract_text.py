@@ -1,7 +1,8 @@
 import fitz  # PyMuPDF
 import logging
 import os
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+import spacy
 
 # Configuración de logs
 logging.basicConfig(
@@ -34,17 +35,36 @@ def extract_text_from_pdf(pdf_path: str) -> str:
         return ""
 
 
-def chunk_text(texto: str, chunk_size: int = 1200, chunk_overlap: int = 300) -> list:
+# Inicializar spaCy una única vez
+_nlp = spacy.blank("es")
+_nlp.add_pipe("sentencizer")
+
+
+def chunk_text(texto: str, max_tokens: int = 500, overlap: int = 50) -> list:
+    """Divide el texto en fragmentos utilizando tokenización de spaCy.
+
+    Los fragmentos se crean en función del número de tokens para preservar la
+    mayor cantidad posible de información relevante. Se permite un solapamiento
+    configurable para mantener el contexto entre fragmentos.
+
+    Args:
+        texto: Texto completo extraído del documento.
+        max_tokens: Número máximo de tokens por fragmento.
+        overlap: Número de tokens de solapamiento entre fragmentos.
+
+    Returns:
+        Lista de fragmentos de texto.
     """
-    Divide el texto en chunks con solapamiento generoso para preservar contexto.
-    Devuelve una lista de strings.
-    """
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-        separators=["\n\n", "\n", ".", " "],
-        add_start_index=True  # opcional para trazabilidad
-    )
-    chunks = splitter.split_text(texto)
-    logging.info(f"✅ Texto dividido en {len(chunks)} chunks.")
+    doc = _nlp(texto)
+    tokens = [token.text for token in doc]
+
+    chunks = []
+    start = 0
+    while start < len(tokens):
+        end = start + max_tokens
+        chunk_tokens = tokens[start:end]
+        chunks.append(" ".join(chunk_tokens).strip())
+        start = end - overlap
+
+    logging.info(f"✅ Texto dividido en {len(chunks)} chunks usando spaCy.")
     return chunks
