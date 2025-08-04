@@ -9,3 +9,5 @@ requests
 unstructured
 matplotlib
 pandas
+spacy
+
