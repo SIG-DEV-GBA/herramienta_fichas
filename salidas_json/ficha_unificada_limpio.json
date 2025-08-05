@@ -115,6 +115,10 @@
     "online": [
       {
         "clave": "Electrónicamente en:",
+        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      },
+      {
+        "clave": "Electrónicamente en:",
         "valor": "https://sede.gobex.es\nTambién puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
       },
       {

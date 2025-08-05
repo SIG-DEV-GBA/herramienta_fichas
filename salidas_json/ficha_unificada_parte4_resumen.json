@@ -1,0 +1,70 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2025",
+  "portales": [
+    "Familia"
+  ],
+  "categoria": [
+    "Natalidad"
+  ],
+  "tipo_ayuda": [
+    "Natalidad"
+  ],
+  "fecha_inicio": "01/01/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "31/12/2024",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura por nacimiento, adopción, guarda con fines de adopción o situación equivalente en núcleos de población con menos de 3.000 habitantes.",
+  "requisitos_acceso": "1. Nacimiento, adopción, guarda con fines de adopción o situación equivalente entre el 1 de septiembre de 2024 y el 31 de agosto de 2025. 2. Residir en núcleos de población con menos de 3.000 habitantes.",
+  "descripcion": "Ayudas destinadas a familias residentes en Extremadura por nacimiento, adopción, guarda con fines de adopción o situación equivalente, en núcleos de población con menos de 3.000 habitantes. Las ayudas son compatibles con otras subvenciones para la misma finalidad.",
+  "cuantia": [
+    {
+      "concepto": "Importe máximo por ayuda",
+      "valor": "3,000",
+      "unidad": "euros"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "cantidad": "3,000 euros"
+    }
+  ],
+  "costes_no_subvencionables": "No se mencionan costes no subvencionables específicos.",
+  "resolucion": "El plazo máximo de resolución es de doce meses desde la fecha del acuerdo de iniciación. Silencio administrativo negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Solicitud",
+      "valor": "Formulario de solicitud debidamente cumplimentado."
+    },
+    {
+      "clave": "Documentación acreditativa",
+      "valor": "Documentación que acredite el nacimiento, adopción, guarda con fines de adopción o situación equivalente."
+    },
+    {
+      "clave": "Alta en el Subsistema de Terceros",
+      "valor": "Documento de alta debidamente cumplimentado."
+    }
+  ],
+  "normativa_reguladora": "- Decreto de convocatoria de ayudas por natalidad 2025, BOP Extremadura núm. 123, 31/12/2024.",
+  "referencia_legislativa": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "http://doe.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "FECHA",
+  "frase_publicitaria": "Solicita las ayudas por natalidad 2025 en Extremadura para familias en núcleos pequeños. Infórmate ya."
+}

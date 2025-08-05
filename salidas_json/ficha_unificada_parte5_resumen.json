@@ -1,0 +1,49 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2025",
+  "portales": [],
+  "categoria": [
+    "Familia"
+  ],
+  "tipo_ayuda": [
+    "Natalidad"
+  ],
+  "fecha_inicio": "01/01/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Personas que hayan tenido un nacimiento, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional entre el 1 de enero de 2024 y el 31 de agosto de 2024, residentes en entidades locales menores y pedanías con población inferior a 3.000 habitantes.",
+  "requisitos_acceso": "Cumplir con los requisitos establecidos en el artículo 2.1 letras a), b) y c) del decreto.",
+  "descripcion": "Subvenciones destinadas a apoyar a las familias por nacimiento, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional. Las ayudas están dirigidas a personas que no cumplieron con el requisito económico en la convocatoria de 2024 y a residentes en entidades locales menores y pedanías con menos de 3.000 habitantes. Las solicitudes deben dirigirse a la Secretaría General de la Consejería de Salud y Servicios Sociales.",
+  "cuantia": [],
+  "importe_maximo": [],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el texto proporcionado.",
+  "resolucion": "El plazo máximo de resolución y notificación es de 2 meses a partir de la fecha de entrada de la solicitud en el registro del órgano competente. El silencio administrativo se considerará negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "La documentación a presentar es la siguiente:",
+      "valor": "- Modelo de solicitud.\n- Certificado de residencia en una entidad local menor o pedanía."
+    }
+  ],
+  "normativa_reguladora": "- Decreto 114/2024, de 10 de septiembre, por el que se establecen las bases reguladoras de las ayudas por natalidad a otorgar a las familias residentes en la Comunidad Autónoma de Extremadura y se aprueba la primera convocatoria para el año 2024.",
+  "referencia_legislativa": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.\n- Ley 38/2003, de 17 de noviembre, General de Subvenciones.\n- Real Decreto 887/2006, de 21 de julio.\n- Ley 5/2007, de 19 de abril, General de Hacienda Pública de Extremadura.\n- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.\n- Real Decreto 203/2021, de 30 de marzo.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas del Sistema de Registro Único de la Junta de Extremadura.\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://www.juntaex.es/w/0702824. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "DD/MM/AAAA",
+  "frase_publicitaria": "Solicita las ayudas por natalidad en Extremadura para nacimientos entre enero y agosto de 2024. Infórmate ahora."
+}

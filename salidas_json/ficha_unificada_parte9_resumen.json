@@ -1,0 +1,56 @@
+{
+  "denominacion_normativa_nombre_ayuda": "",
+  "portales": [],
+  "categoria": [],
+  "tipo_ayuda": [],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "",
+  "administracion": "",
+  "plazo_presentacion": "",
+  "destinatarios": "",
+  "requisitos_acceso": "",
+  "descripcion": "",
+  "cuantia": [
+    {
+      "concepto": "",
+      "valor": "",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "",
+  "resolucion": "",
+  "documentos_presentar": [
+    {
+      "clave": "",
+      "valor": ""
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://cerbero.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "",
+  "fecha": "",
+  "frase_publicitaria": ""
+}

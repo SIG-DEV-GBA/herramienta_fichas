@@ -1,134 +1,93 @@
+
 import os
 import json
+from validador import evaluar_json_por_reglas, esta_vacio
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Función para cargar plantilla vacía
 def cargar_plantilla_vacia():
     with open(os.path.join(BASE_DIR, "..", "entradas", "plantilla.json"), "r", encoding="utf-8") as f:
         return json.load(f)
 
-# Función genérica para combinar listas, con normalización de strings y eliminación de vacíos
-def combinar_listas(lista1, lista2, clave_identificadora=None):
-    if not isinstance(lista1, list):
-        lista1 = []
-    if not isinstance(lista2, list):
-        lista2 = []
+def normalizar_str(s):
+    return s.strip().lower().replace('"', '')
 
-    def normalizar_string(s):
-        return s.strip().replace('"', '').replace("\\\"", "").strip()
+def fusionar_texto_mejorado(versiones):
+    versiones_filtradas = [v.strip() for v in versiones if not esta_vacio(v)]
+    if not versiones_filtradas:
+        return ""
+    return max(versiones_filtradas, key=lambda x: len(x))
 
-    if clave_identificadora:
-        existentes = {normalizar_string(elem[clave_identificadora]) for elem in lista1 if clave_identificadora in elem and elem[clave_identificadora].strip()}
-        nuevos = [elem for elem in lista2 if normalizar_string(elem.get(clave_identificadora, '')) not in existentes and any(v.strip() for v in elem.values())]
-        return lista1 + nuevos
-    else:
-        total = set(normalizar_string(e) for e in lista1 if isinstance(e, str) and e.strip())
-        total.update(normalizar_string(e) for e in lista2 if isinstance(e, str) and e.strip())
-        return list(total)
+def fusionar_lista_simple(versiones):
+    resultado = set()
+    for lista in versiones:
+        resultado.update([normalizar_str(i) for i in lista if i and isinstance(i, str)])
+    return sorted(resultado)
 
-# Funciones específicas de fusión por campo
-def fusionar_referencia_legislativa(actual, nuevo):
-    return combinar_listas(actual, nuevo)
+def fusionar_lista_dict(versiones, clave):
+    vistos = set()
+    resultado = []
+    for lista in versiones:
+        for item in lista:
+            id_val = normalizar_str(item.get(clave, ""))
+            if id_val and id_val not in vistos and not esta_vacio(item):
+                resultado.append(item)
+                vistos.add(id_val)
+    return resultado
 
-def fusionar_cuantia(actual, nuevo):
-    return combinar_listas(actual, nuevo, "concepto")
+def fusionar_referencia_legislativa(versiones):
+    lineas = set()
+    for entrada in versiones:
+        for linea in entrada.strip().split("\n"):
+            linea = linea.strip()
+            if linea.startswith("- ") and linea.endswith("."):
+                lineas.add(linea)
+    return "\n".join(sorted(lineas))
 
-def fusionar_importe_maximo(actual, nuevo):
-    return combinar_listas(actual, nuevo, "concepto")
+def fusionar_campo(clave, versiones):
+    if not versiones:
+        return None
+    if clave in ["descripcion", "resolucion", "costes_no_subvencionables", "criterios_concesion"]:
+        return fusionar_texto_mejorado(versiones)
+    if clave in ["portales", "categoria", "tipo_ayuda"]:
+        return fusionar_lista_simple(versiones)
+    if clave in ["cuantia", "importe_maximo", "documentos_presentar"]:
+        return fusionar_lista_dict(versiones, "concepto" if clave != "documentos_presentar" else "clave")
+    if clave == "referencia_legislativa":
+        return fusionar_referencia_legislativa(versiones)
+    if clave == "lugares_presentacion":
+        final = {"presencial": [], "online": []}
+        for v in versiones:
+            for tipo in ["presencial", "online"]:
+                final[tipo].extend([i for i in v.get(tipo, []) if not esta_vacio(i)])
+        for tipo in final:
+            vistos = set()
+            final[tipo] = [d for d in final[tipo] if normalizar_str(d.get("valor", "")) not in vistos and not vistos.add(normalizar_str(d.get("valor", "")))]
+        return final
+    return fusionar_texto_mejorado(versiones)
 
-def fusionar_documentos_presentar(actual, nuevo):
-    return combinar_listas(actual, nuevo, "clave")
-
-def fusionar_listas_simples(actual, nuevo):
-    return combinar_listas(actual, nuevo)
-
-def fusionar_lugares_presentacion(actual, nuevo):
-    for tipo in ["presencial", "online"]:
-        actual[tipo] = combinar_listas(actual.get(tipo, []), nuevo.get(tipo, []), "clave")
-    return actual
-
-FUSIONADORES = {
-    "referencia_legislativa": fusionar_referencia_legislativa,
-    "cuantia": fusionar_cuantia,
-    "importe_maximo": fusionar_importe_maximo,
-    "documentos_presentar": fusionar_documentos_presentar,
-    "portales": fusionar_listas_simples,
-    "categoria": fusionar_listas_simples,
-    "tipo_ayuda": fusionar_listas_simples,
-    "lugares_presentacion": fusionar_lugares_presentacion,
-}
-
-# Refuerzo obligatorio de valores mínimos al final de la fusión
-def completar_minimos_obligatorios(json_final):
-    if not json_final.get("referencia_legislativa") or json_final["referencia_legislativa"] == "- ":
-        json_final["referencia_legislativa"] = "- Ley 38/2003, de 17 de noviembre, General de Subvenciones."
-
-    if not json_final.get("lugares_presentacion"):
-        json_final["lugares_presentacion"] = {"presencial": [], "online": []}
-
-    if not json_final["lugares_presentacion"].get("presencial"):
-        json_final["lugares_presentacion"]["presencial"] = [{
-            "clave": "Presencialmente en:",
-            "valor": "Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
-        }]
-
-    if not json_final["lugares_presentacion"].get("online"):
-        json_final["lugares_presentacion"]["online"] = [{
-            "clave": "Electrónicamente en:",
-            "valor": "También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
-        }]
-
-    if json_final.get("usuario", "").strip().upper() in ["USUARIO", "FICHAS MIGUEL"]:
-        json_final["usuario"] = "MELIANA"
-
-# Función principal para fusionar varios JSONs
 def fusionar_jsons(nombre_base):
     carpeta = os.path.join(BASE_DIR, "..", "salidas_json")
-    archivos = [
-        os.path.join(carpeta, f) for f in os.listdir(carpeta)
-        if f.startswith(nombre_base + "_parte") and f.endswith(".json")
-    ]
-
+    archivos = [os.path.join(carpeta, f) for f in os.listdir(carpeta) if f.startswith(nombre_base + "_parte") and f.endswith(".json")]
     if not archivos:
         print("❌ No se encontraron partes JSON a fusionar.")
         return
 
     json_final = cargar_plantilla_vacia()
+    versiones_por_campo = {clave: [] for clave in json_final.keys()}
 
     for archivo in archivos:
-        try:
-            with open(archivo, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            print(f"📥 Procesando: {archivo}")
+        with open(archivo, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        validacion = evaluar_json_por_reglas(data)
+        for clave, valor in data.items():
+            if not esta_vacio(valor) and validacion.get(clave, {}).get("valido", True):
+                versiones_por_campo[clave].append(valor)
 
-            for clave, valor in data.items():
-                if not valor or valor in ["- ", ""]:
-                    continue
-                if clave not in json_final or not json_final[clave]:
-                    json_final[clave] = valor
-                elif isinstance(valor, list) or isinstance(valor, dict):
-                    fusionador = FUSIONADORES.get(clave)
-                    if fusionador:
-                        json_final[clave] = fusionador(json_final[clave], valor)
-
-        except Exception as e:
-            print(f"[ERROR] Fallo al procesar {archivo}: {e}")
-
-    completar_minimos_obligatorios(json_final)
+    for clave, versiones in versiones_por_campo.items():
+        json_final[clave] = fusionar_campo(clave, versiones)
 
     ruta_salida = os.path.join(carpeta, f"{nombre_base}_fusionado.json")
-    try:
-        with open(ruta_salida, "w", encoding="utf-8") as f:
-            json.dump(json_final, f, indent=2, ensure_ascii=False)
-        print(f"✅ JSON fusionado guardado en: {ruta_salida}")
-    except Exception as e:
-        print(f"❌ Error al guardar el JSON fusionado: {e}")
-
-# CLI opcional
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 2:
-        print("Uso: python fusionador.py <nombre_base>")
-    else:
-        fusionar_jsons(sys.argv[1])
+    with open(ruta_salida, "w", encoding="utf-8") as f:
+        json.dump(json_final, f, indent=2, ensure_ascii=False)
+    print(f"✅ JSON fusionado guardado en: {ruta_salida}")

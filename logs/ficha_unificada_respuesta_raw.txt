@@ -1,256 +1,537 @@
 ```json
 {
-  "denominacion_normativa_nombre_ayuda": "Ayuda para sufragar parcialmente los gastos de adquisición de tarjeta Bonometro y fomentar el uso del transporte ferroviario de personas mayores de 65 o con un grado de discapacidad igual o superior al 64%, 2025/2026",
-  "portales": ["Mayores", "Discapacidad"],
-  "categoria": ["Transporte"],
-  "tipo_ayuda": ["Transporte"],
-  "fecha_inicio": "07/07/2025",
-  "fecha_fin": "27/09/2025",
-  "fecha_publicacion": "06/07/2025",
-  "ambito_territorial": "Municipio de Meliana, Valencia",
-  "administracion": "Ayuntamiento de Meliana (Valencia)",
-  "plazo_presentacion": "Hasta 27/09/2025",
-  "destinatarios": "Personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%, empadronadas en Meliana.",
-  "requisitos_acceso": "1. Tener cumplidos 65 años o más a fecha 31 de octubre de 2025, o estar en posesión del certificado de minusvalía con un grado igual o superior al 64%. 2. Estar censado/a en el municipio de Meliana con al menos 1 año de antigüedad a fecha 31 de octubre de 2025. 3. Estar al corriente en el cumplimiento de las obligaciones con la Agencia Tributaria y la Seguridad Social y con las obligaciones tributarias del Ayuntamiento de Meliana. 4. No estar incurso/a en ninguna de las circunstancias que impiden obtener la condición de persona beneficiaria señaladas en el artículo 13 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones. 5. No incurrir en ninguna de las causas de exclusión o incompatibilidad especificadas en la base décima.",
-  "descripcion": "La ayuda está destinada a sufragar parcialmente los gastos de adquisición de la tarjeta Bonometro de FGV para personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%, empadronadas en Meliana. Su finalidad es fomentar el uso del transporte público y promover la autonomía de estos colectivos. La ayuda se gestiona bajo los principios de publicidad, transparencia, objetividad, igualdad y no discriminación.",
-  "cuantia": [
-    {
-      "concepto": "Subvención para mayores de 65 años",
-      "valor": "66,40",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Subvención para personas con discapacidad igual o superior al 64%",
-      "valor": "37,30",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Gasto de reactivación de tarjeta",
-      "valor": "2",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Expedición de tarjeta nueva",
-      "valor": "4",
-      "unidad": "€"
-    }
-  ],
-  "importe_maximo": [
-    {
-      "concepto": "Subvención máxima por persona",
-      "cantidad": "66,40 € para mayores de 65 años, 37,30 € para personas con discapacidad igual o superior al 64%"
-    }
-  ],
-  "costes_no_subvencionables": "No se especifican costes no subvencionables en el documento.",
-  "resolucion": "El plazo máximo de resolución y notificación no se especifica en el documento. Se entenderá como silencio administrativo negativo.",
+  "denominacion_normativa_nombre_ayuda": "Decreto 81/2025, de 15 de julio, Ayudas por natalidad en Extremadura 2025",
+  "portales": ["Familia"],
+  "categoria": ["Natalidad"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "01/08/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "01/08/2025",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Salud y Servicios Sociales (Extremadura)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Familias residentes en núcleos de población con menos de 3.000 habitantes en Extremadura que tengan un hijo por nacimiento, adopción o guarda con fines de adopción.",
+  "requisitos_acceso": "Ser padre o madre por naturaleza, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional, y residir en el mismo domicilio. Residir legalmente en España si no es español. Empadronamiento y residencia efectiva durante al menos un año en un núcleo de población de Extremadura con menos de 3.000 habitantes. No estar incurso en prohibición para obtener la condición de beneficiario según el artículo 12.2 de la Ley 6/2011.",
+  "descripcion": "La ayuda está destinada a familias residentes en Extremadura por el nacimiento, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional, en núcleos de población con menos de 3.000 habitantes. Se eliminan requisitos económicos y se considera la población de los municipios menores de 3.000 habitantes para ampliar el número de beneficiarios. La ayuda cubre nacimientos y adopciones ocurridos entre el 1 de enero y el 31 de agosto del año de la convocatoria, y entre el 1 de septiembre y el 31 de diciembre del año anterior.",
+  "cuantia": [],
+  "importe_maximo": [],
+  "costes_no_subvencionables": "",
+  "resolucion": "El plazo de resolución y notificación es de 2 meses. El silencio administrativo es negativo.",
   "documentos_presentar": [
     {
-      "clave": "Instancia-solicitud",
-      "valor": "Según modelo adjunto como anexo I."
-    },
-    {
-      "clave": "Autorización",
-      "valor": "Para que el Ayuntamiento obtenga certificaciones de la AEAT y TGSS."
-    },
-    {
-      "clave": "DNI, NIE o pasaporte",
-      "valor": ""
-    },
-    {
-      "clave": "Certificado de discapacidad",
-      "valor": "Igual o superior al 64%."
-    },
-    {
-      "clave": "Fotografía reciente",
-      "valor": "En formato JPG para primera emisión o renovación de tarjeta caducada (solo presentación a través de la Sede Electrónica)."
+      "clave": "La documentación a presentar es la siguiente:",
+      "valor": "- Documento acreditativo de identidad.\n- Certificado de empadronamiento.\n- Documento que acredite la situación de nacimiento, adopción o guarda.\n- Declaración responsable de no estar incurso en prohibiciones para ser beneficiario."
     }
   ],
-  "normativa_reguladora": "- Bases reguladoras y convocatoria de la ayuda para sufragar parcialmente los gastos de adquisición de tarjeta Bonometro y fomentar el uso del transporte ferroviario de personas mayores de 65 o con un grado de discapacidad igual o superior al 64%, 2025/2026. BOP Valencia núm. 123, 06/07/2025.",
-  "referencia_legislativa": "- Ley 7/1985, de 2 de abril, reguladora de las Bases de Régimen Local. - Ley 38/2003, de 17 de noviembre, general de Subvenciones. - Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones. - Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo común de las Administraciones Públicas. - Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto refundido de la Ley Reguladora de las Haciendas Locales.",
+  "normativa_reguladora": "- Decreto 81/2025, de 15 de julio, por el que se establecen las bases reguladoras de las ayudas por natalidad en Extremadura, BOP (Extremadura) núm. 849791, 01/08/2025.",
+  "referencia_legislativa": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.\n- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
   "lugares_presentacion": {
     "presencial": [
       {
         "clave": "Presencialmente en:",
-        "valor": "Centro de Servicios Sociales de Atención Primaria del Ayuntamiento de Meliana, calle Ramón y Cajal 4, 46133 Meliana (Valencia). Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+        "valor": "- Consejería de Salud y Servicios Sociales, Extremadura.\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
       }
     ],
     "online": [
       {
         "clave": "Electrónicamente en:",
-        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+        "valor": "https://sede.gobex.es\nTambién puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
       }
     ]
   },
-  "criterios_concesion": "La concesión se realizará mediante el procedimiento de concurrencia competitiva.",
-  "usuario": "BASES_844611_BONO_METRO_MELIANA_VALENCIA_07_07_2025",
-  "fecha": "07/07/2025",
-  "frase_publicitaria": "Solicita tu ayuda para el Bonometro en Meliana y ahorra en transporte. Infórmate ya."
+  "criterios_concesion": "",
+  "usuario": "EXTREMADURA",
+  "fecha": "01/08/2025",
+  "frase_publicitaria": "Solicita las ayudas por natalidad en Extremadura para 2025. Infórmate sobre los requisitos y presenta tu solicitud antes del 31 de octubre."
 }
 ```
 
 ```json
 {
-  "denominacion_normativa_nombre_ayuda": "Subvención Bonometro 2025/2026",
-  "portales": [],
-  "categoria": ["Transporte"],
-  "tipo_ayuda": ["Transporte"],
-  "fecha_inicio": "05/07/2025",
-  "fecha_fin": "",
-  "fecha_publicacion": "04/07/2025",
-  "ambito_territorial": "Municipio de Meliana",
-  "administracion": "Ayuntamiento de Meliana (Valencia)",
-  "plazo_presentacion": "Hasta fecha de fin",
-  "destinatarios": "Personas mayores de 65 años o con discapacidad reconocida igual o superior al 64%.",
-  "requisitos_acceso": "Ser mayor de 65 años o tener una discapacidad reconocida igual o superior al 64%.",
-  "descripcion": "La subvención cubre parcialmente el coste del título de transporte de Ferrocarrils de la Generalitat Valenciana (FGV) para personas mayores de 65 años o con una discapacidad igual o superior al 64%. El pago se realiza directamente a FGV y no se permiten pagos anticipados ni abonos a cuenta. La ayuda es incompatible con otras subvenciones o ayudas que tengan la misma finalidad.",
-  "cuantia": [
-    {
-      "concepto": "Subvención parcial del título de transporte FGV",
-      "valor": "Parcial",
-      "unidad": "€"
-    }
-  ],
-  "importe_maximo": [
-    {
-      "concepto": "Subvención parcial del título de transporte FGV",
-      "cantidad": "Parcial"
-    }
-  ],
-  "costes_no_subvencionables": "La ayuda es incompatible con cualquier otra subvención o ayuda, pública o privada, que tenga la misma finalidad.",
-  "resolucion": "El procedimiento de concesión se resolverá en un plazo mínimo de quince días naturales desde la elevación de la propuesta de resolución. El plazo de notificación de la resolución será de diez días. El silencio administrativo se entenderá como negativo.",
+  "denominacion_normativa_nombre_ayuda": "Ayudas para la Infancia y Familias 2023",
+  "portales": ["Familia"],
+  "categoria": ["Básicas"],
+  "tipo_ayuda": ["Familia"],
+  "fecha_inicio": "",
+  "fecha_fin": "30/09/2023",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Infancia y Familias (Extremadura)",
+  "plazo_presentacion": "Hasta 30/09/2023",
+  "destinatarios": "Personas que tengan a su cargo menores de 18 años, con residencia legal en España. En caso de custodia compartida, se requiere acuerdo entre progenitores.",
+  "requisitos_acceso": "Los solicitantes deben cumplir los requisitos en el momento de la solicitud y hasta la resolución. No deben estar incursos en prohibiciones para obtener la ayuda según la Ley 6/2011 de Extremadura.",
+  "descripcion": "Estas ayudas están destinadas a apoyar a las familias con menores de 18 años a su cargo. La ayuda se concede a un solo progenitor, salvo en casos de custodia compartida sin acuerdo, donde se divide entre ambos. No se consideran beneficiarios los menores que no adquieran personalidad civil o fallezcan antes de la resolución. Los menores emancipados pueden solicitar por sí mismos.",
+  "cuantia": [],
+  "importe_maximo": [],
+  "costes_no_subvencionables": "No se financiarán gastos no relacionados con la finalidad de la ayuda, ni aquellos que no cumplan con los requisitos establecidos.",
+  "resolucion": "El plazo máximo de resolución es de tres meses desde la finalización del plazo de presentación. El silencio administrativo es negativo.",
   "documentos_presentar": [
     {
-      "clave": "Documentación general",
-      "valor": "DNI, NIE o pasaporte"
+      "clave": "Documentación de identidad",
+      "valor": "Certificado de Registro de Ciudadano de la Unión Europea o Tarjeta de residencia de familiar de ciudadano de la UE en vigor, o TIE en vigor."
     },
     {
-      "clave": "Documentación específica",
-      "valor": "Certificado de discapacidad igual o superior al 64%."
+      "clave": "Certificación de nacimiento",
+      "valor": "Certificación literal electrónica de la inscripción de nacimiento o resolución judicial/administrativa en casos de adopción."
+    },
+    {
+      "clave": "Certificado de residencia",
+      "valor": "Certificado histórico de residencia y convivientes, incluyendo antigüedad en el Padrón Municipal."
+    },
+    {
+      "clave": "Declaración responsable",
+      "valor": "Declaración responsable de no estar incurso en prohibiciones para obtener la ayuda."
     }
   ],
-  "normativa_reguladora": "- Bases y convocatoria diligencia bonometro 2025 - SEFYCU 6481885. BOP (Valencia) núm. 4, 04/07/2025.",
-  "referencia_legislativa": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones.",
+  "normativa_reguladora": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.",
+  "referencia_legislativa": "- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
   "lugares_presentacion": {
     "presencial": [
       {
         "clave": "Presencialmente en:",
-        "valor": "Ayuntamiento de Meliana, 46133 Meliana, Valencia. Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+        "valor": "- Oficinas del Sistema de Registro Único de la Junta de Extremadura.\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
       }
     ],
     "online": [
       {
         "clave": "Electrónicamente en:",
-        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+        "valor": "https://tramites.juntaex.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
       }
     ]
   },
   "criterios_concesion": "",
   "usuario": "USUARIO",
-  "fecha": "05/07/2025",
-  "frase_publicitaria": "Solicita tu bonometro 2025/2026 para mayores de 65 años o con discapacidad. Infórmate en el Ayuntamiento de Meliana."
+  "fecha": "FECHA",
+  "frase_publicitaria": "Solicita las ayudas para familias con menores en Extremadura. Infórmate sobre los requisitos y plazos."
 }
 ```
 
 ```json
 {
-  "denominacion_normativa_nombre_ayuda": "Subvención Bonometro 2025/2026",
-  "portales": ["Mayores", "Discapacidad"],
-  "categoria": ["Transporte"],
-  "tipo_ayuda": ["Transporte"],
-  "fecha_inicio": "17/07/2025",
-  "fecha_fin": "31/10/2025",
-  "fecha_publicacion": "16/07/2025",
-  "ambito_territorial": "Municipio de Meliana",
-  "administracion": "Ayuntamiento de Meliana (Valencia)",
-  "plazo_presentacion": "Hasta 31/10/2025",
-  "destinatarios": "Personas mayores de 65 años o con discapacidad reconocida igual o superior al 64%, empadronadas en Meliana.",
-  "requisitos_acceso": "Tener 65 años o más a fecha 31 de octubre de 2025, o certificado de discapacidad igual o superior al 64%. Empadronamiento en Meliana con al menos 1 año de antigüedad. Estar al corriente de obligaciones tributarias y con la Seguridad Social. No estar incurso en causas de exclusión según el artículo 13 de la Ley 38/2003.",
-  "descripcion": "La subvención tiene como objetivo sufragar parcialmente los gastos de adquisición de la Tarjeta Bonometro para fomentar el uso del transporte ferroviario entre personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%. La ayuda cubre parte del coste del título de transporte de FGV, descontando del precio establecido en el convenio firmado entre el Ayuntamiento y FGV. Las personas beneficiarias deben aportar una parte del coste.",
+  "denominacion_normativa_nombre_ayuda": "Ayuda por nacimiento, adopción o guarda con fines de adopción 2023",
+  "portales": ["Familia"],
+  "categoria": ["Básicas"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "01/01/2023",
+  "fecha_fin": "30/09/2023",
+  "fecha_publicacion": "31/12/2022",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "Hasta 30/09/2023",
+  "destinatarios": "Personas progenitoras de hijos nacidos, adoptados o en guarda con fines de adopción en Extremadura.",
+  "requisitos_acceso": "Ser progenitor de un hijo nacido, adoptado o en guarda con fines de adopción en Extremadura. En caso de solicitantes no españoles, aportar documento acreditativo de filiación en su país de origen.",
+  "descripcion": "La ayuda consiste en un pago único por cada hijo nacido, adoptado o en guarda con fines de adopción. Se abona en la cuenta bancaria indicada en la solicitud. En caso de fallecimiento o pérdida de custodia del progenitor solicitante, el otro progenitor puede subrogarse en la solicitud. Las notificaciones pueden realizarse en papel o electrónicamente, según la elección del solicitante.",
   "cuantia": [
     {
-      "concepto": "Aportación beneficiarios mayores de 65 años",
-      "valor": "50",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Aportación beneficiarios con discapacidad igual o superior al 64%",
-      "valor": "50",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Subvención para mayores de 65 años",
-      "valor": "66,40",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Subvención para personas con discapacidad igual o superior al 64%",
-      "valor": "37,30",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Gasto de reactivación de tarjetas",
-      "valor": "2",
-      "unidad": "€"
-    },
-    {
-      "concepto": "Gasto de expedición de tarjetas nuevas",
-      "valor": "4",
+      "concepto": "Pago único por cada hijo nacido, adoptado o en guarda",
+      "valor": "500",
       "unidad": "€"
     }
   ],
   "importe_maximo": [
     {
-      "concepto": "Subvención máxima para mayores de 65 años",
-      "cantidad": "66,40 €"
-    },
-    {
-      "concepto": "Subvención máxima para personas con discapacidad igual o superior al 64%",
-      "cantidad": "37,30 €"
+      "concepto": "Por cada hijo nacido, adoptado o en guarda",
+      "cantidad": "500 €"
     }
   ],
-  "costes_no_subvencionables": "No se especifican costes no subvencionables en el documento.",
-  "resolucion": "El plazo máximo de resolución y notificación no está especificado. Silencio administrativo negativo.",
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el texto proporcionado.",
+  "resolucion": "El plazo máximo de resolución es de 3 meses desde la entrada de la solicitud en el registro. El silencio administrativo se considera negativo.",
   "documentos_presentar": [
     {
-      "clave": "Instancia-solicitud",
-      "valor": "Según modelo adjunto como anexo I."
+      "clave": "Documentación de filiación",
+      "valor": "Documento acreditativo de filiación en caso de solicitantes no españoles."
     },
     {
-      "clave": "Autorización para certificaciones telemáticas",
-      "valor": "La presentación de la instancia comportará autorización para obtener certificaciones de la AEAT y TGSS."
+      "clave": "Resolución de adopción",
+      "valor": "Resolución judicial o administrativa en caso de adopción o guarda."
     },
     {
-      "clave": "DNI, NIE o pasaporte",
-      "valor": ""
-    },
-    {
-      "clave": "Certificado de discapacidad",
-      "valor": "Igual o superior al 64%."
-    },
-    {
-      "clave": "Fotografía reciente",
-      "valor": "En formato JPG para primera emisión o renovación de tarjeta caducada (solo presentación a través de la Sede Electrónica)."
+      "clave": "Declaración responsable",
+      "valor": "Declaración responsable suscrita por el solicitante."
     }
   ],
-  "normativa_reguladora": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones. BOP (Valencia) núm. 134, 16/07/2025.\n- Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones. BOP (Valencia) núm. 134, 16/07/2025.",
-  "referencia_legislativa": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones.\n- Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones.",
+  "normativa_reguladora": "- Decreto de la Junta de Extremadura sobre ayudas por nacimiento, adopción o guarda, BOP Extremadura núm. 31, 31/12/2022.",
+  "referencia_legislativa": "- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.\n- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.\n- Ley 4/2022, de 27 de julio, de racionalización y simplificación administrativa de Extremadura.",
   "lugares_presentacion": {
     "presencial": [
       {
         "clave": "Presencialmente en:",
-        "valor": "Centro de Servicios Sociales de Atención Primaria del Ayuntamiento de Meliana, calle Ramón y Cajal 4, 46133 Meliana (Valencia). Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
       }
     ],
     "online": [
       {
         "clave": "Electrónicamente en:",
-        "valor": "Sede Electrónica del Ayuntamiento de Meliana: https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+        "valor": "https://www.juntaex.es/w/5145. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
       }
     ]
   },
   "criterios_concesion": "",
-  "usuario": "MELIANA",
-  "fecha": "04/07/2025",
-  "frase_publicitaria": "Solicita tu Bonometro 2025/2026 y ahorra en transporte si eres mayor de 65 o tienes discapacidad. Infórmate ya."
+  "usuario": "USUARIO",
+  "fecha": "FECHA",
+  "frase_publicitaria": "Solicita la ayuda por nacimiento en Extremadura y recibe 500€ por cada hijo. Infórmate ya."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2025",
+  "portales": ["Familia"],
+  "categoria": ["Natalidad"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "01/01/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "31/12/2024",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura por nacimiento, adopción, guarda con fines de adopción o situación equivalente en núcleos de población con menos de 3.000 habitantes.",
+  "requisitos_acceso": "1. Nacimiento, adopción, guarda con fines de adopción o situación equivalente entre el 1 de septiembre de 2024 y el 31 de agosto de 2025. 2. Residir en núcleos de población con menos de 3.000 habitantes.",
+  "descripcion": "Ayudas destinadas a familias residentes en Extremadura por nacimiento, adopción, guarda con fines de adopción o situación equivalente, en núcleos de población con menos de 3.000 habitantes. Las ayudas son compatibles con otras subvenciones para la misma finalidad.",
+  "cuantia": [
+    {
+      "concepto": "Importe máximo por ayuda",
+      "valor": "3,000",
+      "unidad": "euros"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "cantidad": "3,000 euros"
+    }
+  ],
+  "costes_no_subvencionables": "No se mencionan costes no subvencionables específicos.",
+  "resolucion": "El plazo máximo de resolución es de doce meses desde la fecha del acuerdo de iniciación. Silencio administrativo negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Solicitud",
+      "valor": "Formulario de solicitud debidamente cumplimentado."
+    },
+    {
+      "clave": "Documentación acreditativa",
+      "valor": "Documentación que acredite el nacimiento, adopción, guarda con fines de adopción o situación equivalente."
+    },
+    {
+      "clave": "Alta en el Subsistema de Terceros",
+      "valor": "Documento de alta debidamente cumplimentado."
+    }
+  ],
+  "normativa_reguladora": "- Decreto de convocatoria de ayudas por natalidad 2025, BOP Extremadura núm. 123, 31/12/2024.",
+  "referencia_legislativa": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "http://doe.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "FECHA",
+  "frase_publicitaria": "Solicita las ayudas por natalidad 2025 en Extremadura para familias en núcleos pequeños. Infórmate ya."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2025",
+  "portales": [],
+  "categoria": ["Familia"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "01/01/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Personas que hayan tenido un nacimiento, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional entre el 1 de enero de 2024 y el 31 de agosto de 2024, residentes en entidades locales menores y pedanías con población inferior a 3.000 habitantes.",
+  "requisitos_acceso": "Cumplir con los requisitos establecidos en el artículo 2.1 letras a), b) y c) del decreto.",
+  "descripcion": "Subvenciones destinadas a apoyar a las familias por nacimiento, adopción, guarda con fines de adopción o situación equivalente en caso de adopción internacional. Las ayudas están dirigidas a personas que no cumplieron con el requisito económico en la convocatoria de 2024 y a residentes en entidades locales menores y pedanías con menos de 3.000 habitantes. Las solicitudes deben dirigirse a la Secretaría General de la Consejería de Salud y Servicios Sociales.",
+  "cuantia": [],
+  "importe_maximo": [],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el texto proporcionado.",
+  "resolucion": "El plazo máximo de resolución y notificación es de 2 meses a partir de la fecha de entrada de la solicitud en el registro del órgano competente. El silencio administrativo se considerará negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "La documentación a presentar es la siguiente:",
+      "valor": "- Modelo de solicitud.\n- Certificado de residencia en una entidad local menor o pedanía."
+    }
+  ],
+  "normativa_reguladora": "- Decreto 114/2024, de 10 de septiembre, por el que se establecen las bases reguladoras de las ayudas por natalidad a otorgar a las familias residentes en la Comunidad Autónoma de Extremadura y se aprueba la primera convocatoria para el año 2024.",
+  "referencia_legislativa": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.\n- Ley 38/2003, de 17 de noviembre, General de Subvenciones.\n- Real Decreto 887/2006, de 21 de julio.\n- Ley 5/2007, de 19 de abril, General de Hacienda Pública de Extremadura.\n- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.\n- Real Decreto 203/2021, de 30 de marzo.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas del Sistema de Registro Único de la Junta de Extremadura.\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://www.juntaex.es/w/0702824. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "DD/MM/AAAA",
+  "frase_publicitaria": "Solicita las ayudas por natalidad en Extremadura para nacimientos entre enero y agosto de 2024. Infórmate ahora."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por Natalidad a Otorgar a las Familias Residentes en la Comunidad Autónoma de Extremadura",
+  "portales": ["Familia"],
+  "categoria": ["Natalidad"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Junta de Extremadura (Extremadura)",
+  "plazo_presentacion": "",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura con hijos recién nacidos, adoptados o en guarda con fines de adopción.",
+  "requisitos_acceso": "Residir en la Comunidad Autónoma de Extremadura. Tener un hijo recién nacido, adoptado o en guarda con fines de adopción.",
+  "descripcion": "Las ayudas por natalidad están destinadas a las familias residentes en Extremadura que tengan hijos recién nacidos, adoptados o en guarda con fines de adopción. La finalidad es apoyar económicamente a las familias en los primeros momentos de vida del menor. Las ayudas son incompatibles con otras subvenciones similares.",
+  "cuantia": [
+    {
+      "concepto": "Ayuda por hijo nacido, adoptado o en guarda",
+      "valor": "",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Por cada hijo nacido, adoptado o en guarda",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "Gastos fiscales, productos no esenciales, adquisiciones previas sin justificación, duplicidad de facturas, gastos fuera de plazo o no relacionados con la finalidad de la ayuda.",
+  "resolucion": "El plazo máximo de resolución y notificación es de seis meses desde la fecha de presentación de la solicitud. El silencio administrativo es negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Certificado histórico de residencia y convivientes",
+      "valor": ""
+    },
+    {
+      "clave": "Certificado literal de nacimiento o certificación acreditativa",
+      "valor": ""
+    },
+    {
+      "clave": "Resolución judicial, administrativa o documento análogo en casos de adopción",
+      "valor": ""
+    }
+  ],
+  "normativa_reguladora": "- DECRETO POR EL QUE SE ESTABLECEN LAS BASES REGULADORAS DE LAS AYUDAS POR NATALIDAD A OTORGAR A LAS FAMILIAS RESIDENTES EN LA COMUNIDAD AUTÓNOMA DE EXTREMADURA Y SE APRUEBA LA PRIMERA CONVOCATORIA.",
+  "referencia_legislativa": "- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.\n- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://www.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "FECHA",
+  "frase_publicitaria": "Infórmate sobre las ayudas por natalidad en Extremadura. Solicita tu apoyo económico para recién nacidos o adopciones."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2023",
+  "portales": ["Familia"],
+  "categoria": ["Básicas"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Salud y Servicios Sociales (Badajoz)",
+  "plazo_presentacion": "",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura con hijos recién nacidos.",
+  "requisitos_acceso": "La persona progenitora beneficiaria debe convivir en el mismo domicilio que el menor.",
+  "descripcion": "La ayuda por natalidad está destinada a las familias residentes en Extremadura para apoyar los gastos derivados del nacimiento de un hijo. La ayuda se abona en la cuenta bancaria indicada, que debe estar activa en el Sistema de Terceros de la Junta de Extremadura. Si la cuenta no está activa, debe tramitarse el alta a través del procedimiento 'Alta de Terceros'.",
+  "cuantia": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "valor": "",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el texto proporcionado.",
+  "resolucion": "El plazo máximo de resolución y notificación no se especifica en el texto proporcionado. El silencio administrativo se entiende como negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Documentación general",
+      "valor": "Certificado de titularidad de la cuenta bancaria, si no se autoriza la consulta por parte de la Tesorería."
+    },
+    {
+      "clave": "Documentación específica",
+      "valor": "Certificado de residencia legal si se opone a la consulta electrónica de datos."
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://www.juntaex.es/w/5145?inheritRedirect=true. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "dd/mm/aaaa",
+  "frase_publicitaria": "Infórmate sobre las ayudas por natalidad en Extremadura para familias con hijos recién nacidos."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2023",
+  "portales": ["Familia"],
+  "categoria": ["Natalidad"],
+  "tipo_ayuda": ["Natalidad"],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Salud y Servicios Sociales (Badajoz)",
+  "plazo_presentacion": "Hasta fecha de fin",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura.",
+  "requisitos_acceso": "Residir en la Comunidad Autónoma de Extremadura.",
+  "descripcion": "El tratamiento de datos se realiza para tramitar expedientes de ayudas por natalidad otorgadas a familias residentes en Extremadura. La Secretaría General de Servicios Sociales, Inclusión, Infancia y Familia es el órgano competente para la tramitación, con potestad para verificar los datos de identidad. No se prevén transferencias internacionales de datos ni cesiones a terceros, salvo a organismos públicos cuando lo permita la ley.",
+  "cuantia": [
+    {
+      "concepto": "",
+      "valor": "",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "",
+  "resolucion": "El plazo máximo de resolución y notificación no se menciona. El silencio administrativo se entenderá como negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Documentación general",
+      "valor": "Certificado de registro de ciudadano de la Unión Europea o Tarjeta de residencia de familiar de ciudadano de la Unión Europea o Tarjeta de Identidad de Extranjero o Documento de identidad válido."
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "Servicio Territorial de Cáceres, Plaza Hernán Cortés, 1, 10001-Cáceres. Servicio Territorial de Badajoz, Ronda del Pilar, 10, 06002-Badajoz. Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://cerbero.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "31/10/2023",
+  "frase_publicitaria": "Solicita las ayudas por natalidad para familias en Extremadura. Infórmate sobre los requisitos y presenta tu solicitud."
+}
+```
+
+```json
+{
+  "denominacion_normativa_nombre_ayuda": "",
+  "portales": [],
+  "categoria": [],
+  "tipo_ayuda": [],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "",
+  "administracion": "",
+  "plazo_presentacion": "",
+  "destinatarios": "",
+  "requisitos_acceso": "",
+  "descripcion": "",
+  "cuantia": [
+    {
+      "concepto": "",
+      "valor": "",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "",
+  "resolucion": "",
+  "documentos_presentar": [
+    {
+      "clave": "",
+      "valor": ""
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://cerbero.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "",
+  "fecha": "",
+  "frase_publicitaria": ""
 }
 ```

@@ -1,0 +1,66 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2023",
+  "portales": [
+    "Familia"
+  ],
+  "categoria": [
+    "Básicas"
+  ],
+  "tipo_ayuda": [
+    "Natalidad"
+  ],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Salud y Servicios Sociales (Badajoz)",
+  "plazo_presentacion": "",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura con hijos recién nacidos.",
+  "requisitos_acceso": "La persona progenitora beneficiaria debe convivir en el mismo domicilio que el menor.",
+  "descripcion": "La ayuda por natalidad está destinada a las familias residentes en Extremadura para apoyar los gastos derivados del nacimiento de un hijo. La ayuda se abona en la cuenta bancaria indicada, que debe estar activa en el Sistema de Terceros de la Junta de Extremadura. Si la cuenta no está activa, debe tramitarse el alta a través del procedimiento 'Alta de Terceros'.",
+  "cuantia": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "valor": "",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Ayuda por natalidad",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el texto proporcionado.",
+  "resolucion": "El plazo máximo de resolución y notificación no se especifica en el texto proporcionado. El silencio administrativo se entiende como negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Documentación general",
+      "valor": "Certificado de titularidad de la cuenta bancaria, si no se autoriza la consulta por parte de la Tesorería."
+    },
+    {
+      "clave": "Documentación específica",
+      "valor": "Certificado de residencia legal si se opone a la consulta electrónica de datos."
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://www.juntaex.es/w/5145?inheritRedirect=true. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "dd/mm/aaaa",
+  "frase_publicitaria": "Infórmate sobre las ayudas por natalidad en Extremadura para familias con hijos recién nacidos."
+}

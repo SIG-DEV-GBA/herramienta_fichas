@@ -1,64 +1,63 @@
 {
-  "denominacion_normativa_nombre_ayuda": "Subvención Bonometro 2025/2026",
-  "portales": [],
+  "denominacion_normativa_nombre_ayuda": "Ayudas para la Infancia y Familias 2023",
+  "portales": [
+    "Familia"
+  ],
   "categoria": [
-    "Transporte"
+    "Básicas"
   ],
   "tipo_ayuda": [
-    "Transporte"
+    "Familia"
   ],
-  "fecha_inicio": "05/07/2025",
-  "fecha_fin": "",
-  "fecha_publicacion": "04/07/2025",
-  "ambito_territorial": "Municipio de Meliana",
-  "administracion": "Ayuntamiento de Meliana (Valencia)",
-  "plazo_presentacion": "Hasta fecha de fin",
-  "destinatarios": "Personas mayores de 65 años o con discapacidad reconocida igual o superior al 64%.",
-  "requisitos_acceso": "Ser mayor de 65 años o tener una discapacidad reconocida igual o superior al 64%.",
-  "descripcion": "La subvención cubre parcialmente el coste del título de transporte de Ferrocarrils de la Generalitat Valenciana (FGV) para personas mayores de 65 años o con una discapacidad igual o superior al 64%. El pago se realiza directamente a FGV y no se permiten pagos anticipados ni abonos a cuenta. La ayuda es incompatible con otras subvenciones o ayudas que tengan la misma finalidad.",
-  "cuantia": [
-    {
-      "concepto": "Subvención parcial del título de transporte FGV",
-      "valor": "Parcial",
-      "unidad": "€"
-    }
-  ],
-  "importe_maximo": [
-    {
-      "concepto": "Subvención parcial del título de transporte FGV",
-      "cantidad": "Parcial"
-    }
-  ],
-  "costes_no_subvencionables": "La ayuda es incompatible con cualquier otra subvención o ayuda, pública o privada, que tenga la misma finalidad.",
-  "resolucion": "El procedimiento de concesión se resolverá en un plazo mínimo de quince días naturales desde la elevación de la propuesta de resolución. El plazo de notificación de la resolución será de diez días. El silencio administrativo se entenderá como negativo.",
+  "fecha_inicio": "",
+  "fecha_fin": "30/09/2023",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Infancia y Familias (Extremadura)",
+  "plazo_presentacion": "Hasta 30/09/2023",
+  "destinatarios": "Personas que tengan a su cargo menores de 18 años, con residencia legal en España. En caso de custodia compartida, se requiere acuerdo entre progenitores.",
+  "requisitos_acceso": "Los solicitantes deben cumplir los requisitos en el momento de la solicitud y hasta la resolución. No deben estar incursos en prohibiciones para obtener la ayuda según la Ley 6/2011 de Extremadura.",
+  "descripcion": "Estas ayudas están destinadas a apoyar a las familias con menores de 18 años a su cargo. La ayuda se concede a un solo progenitor, salvo en casos de custodia compartida sin acuerdo, donde se divide entre ambos. No se consideran beneficiarios los menores que no adquieran personalidad civil o fallezcan antes de la resolución. Los menores emancipados pueden solicitar por sí mismos.",
+  "cuantia": [],
+  "importe_maximo": [],
+  "costes_no_subvencionables": "No se financiarán gastos no relacionados con la finalidad de la ayuda, ni aquellos que no cumplan con los requisitos establecidos.",
+  "resolucion": "El plazo máximo de resolución es de tres meses desde la finalización del plazo de presentación. El silencio administrativo es negativo.",
   "documentos_presentar": [
     {
-      "clave": "Documentación general",
-      "valor": "DNI, NIE o pasaporte"
+      "clave": "Documentación de identidad",
+      "valor": "Certificado de Registro de Ciudadano de la Unión Europea o Tarjeta de residencia de familiar de ciudadano de la UE en vigor, o TIE en vigor."
     },
     {
-      "clave": "Documentación específica",
-      "valor": "Certificado de discapacidad igual o superior al 64%."
+      "clave": "Certificación de nacimiento",
+      "valor": "Certificación literal electrónica de la inscripción de nacimiento o resolución judicial/administrativa en casos de adopción."
+    },
+    {
+      "clave": "Certificado de residencia",
+      "valor": "Certificado histórico de residencia y convivientes, incluyendo antigüedad en el Padrón Municipal."
+    },
+    {
+      "clave": "Declaración responsable",
+      "valor": "Declaración responsable de no estar incurso en prohibiciones para obtener la ayuda."
     }
   ],
-  "normativa_reguladora": "- Bases y convocatoria diligencia bonometro 2025 - SEFYCU 6481885. BOP (Valencia) núm. 4, 04/07/2025.",
-  "referencia_legislativa": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones.",
+  "normativa_reguladora": "- Ley 6/2011, de 23 de marzo, de Subvenciones de la Comunidad Autónoma de Extremadura.",
+  "referencia_legislativa": "- Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
   "lugares_presentacion": {
     "presencial": [
       {
         "clave": "Presencialmente en:",
-        "valor": "Ayuntamiento de Meliana, 46133 Meliana, Valencia. Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+        "valor": "- Oficinas del Sistema de Registro Único de la Junta de Extremadura.\n- Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos).\n- Registro de Ventanilla Única en el territorio Nacional."
       }
     ],
     "online": [
       {
         "clave": "Electrónicamente en:",
-        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+        "valor": "https://tramites.juntaex.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
       }
     ]
   },
   "criterios_concesion": "",
   "usuario": "USUARIO",
-  "fecha": "05/07/2025",
-  "frase_publicitaria": "Solicita tu bonometro 2025/2026 para mayores de 65 años o con discapacidad. Infórmate en el Ayuntamiento de Meliana."
+  "fecha": "FECHA",
+  "frase_publicitaria": "Solicita las ayudas para familias con menores en Extremadura. Infórmate sobre los requisitos y plazos."
 }

@@ -1,0 +1,62 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Ayudas por natalidad 2023",
+  "portales": [
+    "Familia"
+  ],
+  "categoria": [
+    "Natalidad"
+  ],
+  "tipo_ayuda": [
+    "Natalidad"
+  ],
+  "fecha_inicio": "",
+  "fecha_fin": "",
+  "fecha_publicacion": "",
+  "ambito_territorial": "Comunidad Autónoma de Extremadura",
+  "administracion": "Consejería de Salud y Servicios Sociales (Badajoz)",
+  "plazo_presentacion": "Hasta fecha de fin",
+  "destinatarios": "Familias residentes en la Comunidad Autónoma de Extremadura.",
+  "requisitos_acceso": "Residir en la Comunidad Autónoma de Extremadura.",
+  "descripcion": "El tratamiento de datos se realiza para tramitar expedientes de ayudas por natalidad otorgadas a familias residentes en Extremadura. La Secretaría General de Servicios Sociales, Inclusión, Infancia y Familia es el órgano competente para la tramitación, con potestad para verificar los datos de identidad. No se prevén transferencias internacionales de datos ni cesiones a terceros, salvo a organismos públicos cuando lo permita la ley.",
+  "cuantia": [
+    {
+      "concepto": "",
+      "valor": "",
+      "unidad": ""
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "",
+      "cantidad": ""
+    }
+  ],
+  "costes_no_subvencionables": "",
+  "resolucion": "El plazo máximo de resolución y notificación no se menciona. El silencio administrativo se entenderá como negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Documentación general",
+      "valor": "Certificado de registro de ciudadano de la Unión Europea o Tarjeta de residencia de familiar de ciudadano de la Unión Europea o Tarjeta de Identidad de Extranjero o Documento de identidad válido."
+    }
+  ],
+  "normativa_reguladora": "- ",
+  "referencia_legislativa": "- ",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "Servicio Territorial de Cáceres, Plaza Hernán Cortés, 1, 10001-Cáceres. Servicio Territorial de Badajoz, Ronda del Pilar, 10, 06002-Badajoz. Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://cerbero.juntaex.es. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "31/10/2023",
+  "frase_publicitaria": "Solicita las ayudas por natalidad para familias en Extremadura. Infórmate sobre los requisitos y presenta tu solicitud."
+}

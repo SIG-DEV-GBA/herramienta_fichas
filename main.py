@@ -1,5 +1,7 @@
+
 import os
 import sys
+import json
 
 # Ruta base = carpeta donde está este main.py (es decir, /dev)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -11,6 +13,7 @@ from scripts.extractor_texto import extraer_textos_unificados
 from scripts.resumidor_ia import resumir_desde_varios_archivos
 from scripts.fusionador import fusionar_jsons
 from scripts.generar_docx import generar_docx_desde_json
+from scripts.limpiador_json import sanear_json_final  # nuevo import
 
 def guardar_texto_como_txt(texto: str, nombre_base: str):
     ruta_txt = os.path.join(BASE_DIR, "salidas_txt", f"{nombre_base}_extraido.txt")
@@ -31,6 +34,15 @@ def guardar_respuesta_bruta(respuesta: str, nombre_base: str):
         print(f"📝 Respuesta bruta guardada en: {ruta_log}")
     except Exception as e:
         print(f"❌ Error al guardar la respuesta bruta: {e}")
+
+def guardar_json_limpio(data: dict, nombre_base: str):
+    ruta_json = os.path.join(BASE_DIR, "salidas_json", f"{nombre_base}_limpio.json")
+    try:
+        with open(ruta_json, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"✅ JSON limpio guardado en: {ruta_json}")
+    except Exception as e:
+        print(f"❌ Error al guardar el JSON limpio: {e}")
 
 def obtener_documentos_entrada() -> list[str]:
     carpeta = os.path.join(BASE_DIR, "entradas", "documentos")
@@ -59,7 +71,6 @@ def main():
         print(f"   📄 {os.path.basename(ruta)}")
     print("\n🟡 Extrayendo y unificando texto...\n")
 
-    from scripts.extractor_texto import extraer_textos_unificados
     texto_unificado = extraer_textos_unificados(rutas_documentos)
 
     if not texto_unificado.strip():
@@ -76,13 +87,18 @@ def main():
     print("🧬 Fusionando chunks en JSON final...\n")
     fusionar_jsons(nombre_base)
 
-    json_path = os.path.join(BASE_DIR, "salidas_json", f"{nombre_base}_fusionado.json")
+    ruta_fusionado = os.path.join(BASE_DIR, "salidas_json", f"{nombre_base}_fusionado.json")
+    if os.path.exists(ruta_fusionado):
+        print("🧹 Limpiando JSON fusionado...\n")
+        with open(ruta_fusionado, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        data_limpia = sanear_json_final(data)
+        guardar_json_limpio(data_limpia, nombre_base)
 
-    if os.path.exists(json_path):
         print("📄 Generando documento Word...\n")
-        generar_docx_desde_json(json_path)
+        generar_docx_desde_json(os.path.join(BASE_DIR, "salidas_json", f"{nombre_base}_limpio.json"))
     else:
-        print(f"❌ No se encontró el JSON fusionado en {json_path}")
+        print(f"❌ No se encontró el JSON fusionado en {ruta_fusionado}")
 
 if __name__ == "__main__":
     main()
