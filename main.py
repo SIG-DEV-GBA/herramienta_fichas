@@ -1,69 +1,88 @@
-import logging
-import json
-from scripts.extract_text import extract_text_from_pdf, chunk_text
-from scripts.embedding_manager import generar_embeddings
-from scripts.generador_ficha import rellenar_ficha, guardar_ficha
-from scripts.verificador_ficha import verificar_ficha_vs_plantilla
-from scripts.exportar_ficha_docx import exportar_ficha_legible_a_docx
+import os
+import sys
 
-# Configurar logs
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S"
-)
+# Ruta base = carpeta donde está este main.py (es decir, /dev)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# === CONFIGURACIÓN INICIAL ===
-RUTA_PDF = "entradas/documentos/ejemplo.pdf"
-DOC_ID = "documento_001"
-ARCHIVO_SALIDA = f"salidas/ficha_{DOC_ID}.json"
-ARCHIVO_PLANTILLA = "entradas/plantilla.json"
-ARCHIVO_DOCX = f"salidas/ficha_legible_{DOC_ID}.docx"
+# Añadir la subcarpeta 'scripts' al path
+sys.path.append(os.path.join(BASE_DIR, 'scripts'))
+
+from scripts.extractor_texto import extraer_textos_unificados
+from scripts.resumidor_ia import resumir_desde_varios_archivos
+from scripts.fusionador import fusionar_jsons
+from scripts.generar_docx import generar_docx_desde_json
+
+def guardar_texto_como_txt(texto: str, nombre_base: str):
+    ruta_txt = os.path.join(BASE_DIR, "salidas_txt", f"{nombre_base}_extraido.txt")
+    os.makedirs(os.path.dirname(ruta_txt), exist_ok=True)
+    try:
+        with open(ruta_txt, 'w', encoding='utf-8') as f:
+            f.write(texto)
+        print(f"💾 Texto combinado guardado en: {ruta_txt}")
+    except Exception as e:
+        print(f"❌ Error al guardar el archivo .txt: {e}")
+
+def guardar_respuesta_bruta(respuesta: str, nombre_base: str):
+    ruta_log = os.path.join(BASE_DIR, "logs", f"{nombre_base}_respuesta_raw.txt")
+    os.makedirs(os.path.dirname(ruta_log), exist_ok=True)
+    try:
+        with open(ruta_log, 'w', encoding='utf-8') as f:
+            f.write(respuesta)
+        print(f"📝 Respuesta bruta guardada en: {ruta_log}")
+    except Exception as e:
+        print(f"❌ Error al guardar la respuesta bruta: {e}")
+
+def obtener_documentos_entrada() -> list[str]:
+    carpeta = os.path.join(BASE_DIR, "entradas", "documentos")
+    extensiones_validas = [".pdf", ".docx"]
+
+    documentos = [
+        os.path.join(carpeta, f)
+        for f in sorted(os.listdir(carpeta))
+        if os.path.isfile(os.path.join(carpeta, f)) and os.path.splitext(f)[1].lower() in extensiones_validas
+    ]
+
+    if not documentos:
+        print("⚠️ No se encontraron documentos .pdf o .docx en la carpeta de entrada.")
+
+    return documentos
 
 def main():
-    logging.info("🟦 Inicio del proceso de generación de ficha legal")
+    rutas_documentos = obtener_documentos_entrada()
+    nombre_base = "ficha_unificada"
 
-    # === PASO 1: EXTRAER TEXTO DEL PDF ===
-    texto = extract_text_from_pdf(RUTA_PDF)
-    if not texto:
-        logging.error("❌ No se pudo extraer texto del PDF. Terminando.")
+    if not rutas_documentos:
         return
 
-    # === PASO 2: DIVIDIR TEXTO EN CHUNKS ===
-    chunks = chunk_text(texto)
+    print("🟡 Documentos encontrados:")
+    for ruta in rutas_documentos:
+        print(f"   📄 {os.path.basename(ruta)}")
+    print("\n🟡 Extrayendo y unificando texto...\n")
 
-    # === PASO 3: CREAR Y GUARDAR EMBEDDINGS ===
-    generar_embeddings(chunks, doc_id=DOC_ID)
+    from scripts.extractor_texto import extraer_textos_unificados
+    texto_unificado = extraer_textos_unificados(rutas_documentos)
 
-    # === PASO 4: RELLENAR CAMPOS DEL JSON CON GPT ===
-    ficha = rellenar_ficha(doc_id=DOC_ID)
+    if not texto_unificado.strip():
+        print("❌ No se pudo extraer texto de los documentos.")
+        return
 
-    # === PASO 5: GUARDAR RESULTADO COMO JSON ===
-    guardar_ficha(ficha, ARCHIVO_SALIDA)
+    print("✅ Texto extraído con éxito. Guardando copia .txt...\n")
+    guardar_texto_como_txt(texto_unificado, nombre_base)
 
-    # === PASO 6: VERIFICAR CONTRA PLANTILLA ===
-    try:
-        with open(ARCHIVO_PLANTILLA, "r", encoding="utf-8") as f:
-            plantilla = json.load(f)
+    print("🤖 Generando resumen unificado con IA por chunks...\n")
+    resumen_json = resumir_desde_varios_archivos(rutas_documentos, nombre_base)
+    guardar_respuesta_bruta(resumen_json, nombre_base)
 
-        errores = verificar_ficha_vs_plantilla(plantilla, ficha)
+    print("🧬 Fusionando chunks en JSON final...\n")
+    fusionar_jsons(nombre_base)
 
-        if not errores:
-            logging.info("✅ Verificación final: ficha estructuralmente correcta.")
-        else:
-            logging.warning("🔎 Informe de verificación:")
-            for err in errores:
-                print(f" - {err}")
-    except Exception as e:
-        logging.error(f"Error durante la verificación: {e}")
+    json_path = os.path.join(BASE_DIR, "salidas_json", f"{nombre_base}_fusionado.json")
 
-    # === PASO 7: EXPORTAR A DOCUMENTO LEGIBLE ===
-    exportar_ficha_legible_a_docx(ARCHIVO_SALIDA, ARCHIVO_DOCX)
-    logging.info(f"📄 Documento Word generado en: {ARCHIVO_DOCX}")
-
-    # Vista previa parcial
-    print("\n🟢 FICHA GENERADA:\n")
-    print(json.dumps(ficha, indent=2, ensure_ascii=False)[:2000])
+    if os.path.exists(json_path):
+        print("📄 Generando documento Word...\n")
+        generar_docx_desde_json(json_path)
+    else:
+        print(f"❌ No se encontró el JSON fusionado en {json_path}")
 
 if __name__ == "__main__":
     main()

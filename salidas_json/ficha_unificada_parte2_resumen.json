@@ -1,0 +1,64 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Subvención Bonometro 2025/2026",
+  "portales": [],
+  "categoria": [
+    "Transporte"
+  ],
+  "tipo_ayuda": [
+    "Transporte"
+  ],
+  "fecha_inicio": "05/07/2025",
+  "fecha_fin": "",
+  "fecha_publicacion": "04/07/2025",
+  "ambito_territorial": "Municipio de Meliana",
+  "administracion": "Ayuntamiento de Meliana (Valencia)",
+  "plazo_presentacion": "Hasta fecha de fin",
+  "destinatarios": "Personas mayores de 65 años o con discapacidad reconocida igual o superior al 64%.",
+  "requisitos_acceso": "Ser mayor de 65 años o tener una discapacidad reconocida igual o superior al 64%.",
+  "descripcion": "La subvención cubre parcialmente el coste del título de transporte de Ferrocarrils de la Generalitat Valenciana (FGV) para personas mayores de 65 años o con una discapacidad igual o superior al 64%. El pago se realiza directamente a FGV y no se permiten pagos anticipados ni abonos a cuenta. La ayuda es incompatible con otras subvenciones o ayudas que tengan la misma finalidad.",
+  "cuantia": [
+    {
+      "concepto": "Subvención parcial del título de transporte FGV",
+      "valor": "Parcial",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Subvención parcial del título de transporte FGV",
+      "cantidad": "Parcial"
+    }
+  ],
+  "costes_no_subvencionables": "La ayuda es incompatible con cualquier otra subvención o ayuda, pública o privada, que tenga la misma finalidad.",
+  "resolucion": "El procedimiento de concesión se resolverá en un plazo mínimo de quince días naturales desde la elevación de la propuesta de resolución. El plazo de notificación de la resolución será de diez días. El silencio administrativo se entenderá como negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Documentación general",
+      "valor": "DNI, NIE o pasaporte"
+    },
+    {
+      "clave": "Documentación específica",
+      "valor": "Certificado de discapacidad igual o superior al 64%."
+    }
+  ],
+  "normativa_reguladora": "- Bases y convocatoria diligencia bonometro 2025 - SEFYCU 6481885. BOP (Valencia) núm. 4, 04/07/2025.",
+  "referencia_legislativa": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "Ayuntamiento de Meliana, 46133 Meliana, Valencia. Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "USUARIO",
+  "fecha": "05/07/2025",
+  "frase_publicitaria": "Solicita tu bonometro 2025/2026 para mayores de 65 años o con discapacidad. Infórmate en el Ayuntamiento de Meliana."
+}

@@ -1,0 +1,94 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Ayuda para sufragar parcialmente los gastos de adquisición de tarjeta Bonometro y fomentar el uso del transporte ferroviario de personas mayores de 65 o con un grado de discapacidad igual o superior al 64%, 2025/2026",
+  "portales": [
+    "Mayores",
+    "Discapacidad"
+  ],
+  "categoria": [
+    "Transporte"
+  ],
+  "tipo_ayuda": [
+    "Transporte"
+  ],
+  "fecha_inicio": "07/07/2025",
+  "fecha_fin": "27/09/2025",
+  "fecha_publicacion": "06/07/2025",
+  "ambito_territorial": "Municipio de Meliana, Valencia",
+  "administracion": "Ayuntamiento de Meliana (Valencia)",
+  "plazo_presentacion": "Hasta 27/09/2025",
+  "destinatarios": "Personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%, empadronadas en Meliana.",
+  "requisitos_acceso": "1. Tener cumplidos 65 años o más a fecha 31 de octubre de 2025, o estar en posesión del certificado de minusvalía con un grado igual o superior al 64%. 2. Estar censado/a en el municipio de Meliana con al menos 1 año de antigüedad a fecha 31 de octubre de 2025. 3. Estar al corriente en el cumplimiento de las obligaciones con la Agencia Tributaria y la Seguridad Social y con las obligaciones tributarias del Ayuntamiento de Meliana. 4. No estar incurso/a en ninguna de las circunstancias que impiden obtener la condición de persona beneficiaria señaladas en el artículo 13 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones. 5. No incurrir en ninguna de las causas de exclusión o incompatibilidad especificadas en la base décima.",
+  "descripcion": "La ayuda está destinada a sufragar parcialmente los gastos de adquisición de la tarjeta Bonometro de FGV para personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%, empadronadas en Meliana. Su finalidad es fomentar el uso del transporte público y promover la autonomía de estos colectivos. La ayuda se gestiona bajo los principios de publicidad, transparencia, objetividad, igualdad y no discriminación.",
+  "cuantia": [
+    {
+      "concepto": "Subvención para mayores de 65 años",
+      "valor": "66,40",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Subvención para personas con discapacidad igual o superior al 64%",
+      "valor": "37,30",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Gasto de reactivación de tarjeta",
+      "valor": "2",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Expedición de tarjeta nueva",
+      "valor": "4",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Subvención máxima por persona",
+      "cantidad": "66,40 € para mayores de 65 años, 37,30 € para personas con discapacidad igual o superior al 64%"
+    }
+  ],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el documento.",
+  "resolucion": "El plazo máximo de resolución y notificación no se especifica en el documento. Se entenderá como silencio administrativo negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Instancia-solicitud",
+      "valor": "Según modelo adjunto como anexo I."
+    },
+    {
+      "clave": "Autorización",
+      "valor": "Para que el Ayuntamiento obtenga certificaciones de la AEAT y TGSS."
+    },
+    {
+      "clave": "DNI, NIE o pasaporte",
+      "valor": ""
+    },
+    {
+      "clave": "Certificado de discapacidad",
+      "valor": "Igual o superior al 64%."
+    },
+    {
+      "clave": "Fotografía reciente",
+      "valor": "En formato JPG para primera emisión o renovación de tarjeta caducada (solo presentación a través de la Sede Electrónica)."
+    }
+  ],
+  "normativa_reguladora": "- Bases reguladoras y convocatoria de la ayuda para sufragar parcialmente los gastos de adquisición de tarjeta Bonometro y fomentar el uso del transporte ferroviario de personas mayores de 65 o con un grado de discapacidad igual o superior al 64%, 2025/2026. BOP Valencia núm. 123, 06/07/2025.",
+  "referencia_legislativa": "- Ley 7/1985, de 2 de abril, reguladora de las Bases de Régimen Local. - Ley 38/2003, de 17 de noviembre, general de Subvenciones. - Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones. - Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo común de las Administraciones Públicas. - Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto refundido de la Ley Reguladora de las Haciendas Locales.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "Centro de Servicios Sociales de Atención Primaria del Ayuntamiento de Meliana, calle Ramón y Cajal 4, 46133 Meliana (Valencia). Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "La concesión se realizará mediante el procedimiento de concurrencia competitiva.",
+  "usuario": "BASES_844611_BONO_METRO_MELIANA_VALENCIA_07_07_2025",
+  "fecha": "07/07/2025",
+  "frase_publicitaria": "Solicita tu ayuda para el Bonometro en Meliana y ahorra en transporte. Infórmate ya."
+}

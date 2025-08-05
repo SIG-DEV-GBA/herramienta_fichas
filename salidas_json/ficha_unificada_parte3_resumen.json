@@ -1,0 +1,108 @@
+{
+  "denominacion_normativa_nombre_ayuda": "Subvención Bonometro 2025/2026",
+  "portales": [
+    "Mayores",
+    "Discapacidad"
+  ],
+  "categoria": [
+    "Transporte"
+  ],
+  "tipo_ayuda": [
+    "Transporte"
+  ],
+  "fecha_inicio": "17/07/2025",
+  "fecha_fin": "31/10/2025",
+  "fecha_publicacion": "16/07/2025",
+  "ambito_territorial": "Municipio de Meliana",
+  "administracion": "Ayuntamiento de Meliana (Valencia)",
+  "plazo_presentacion": "Hasta 31/10/2025",
+  "destinatarios": "Personas mayores de 65 años o con discapacidad reconocida igual o superior al 64%, empadronadas en Meliana.",
+  "requisitos_acceso": "Tener 65 años o más a fecha 31 de octubre de 2025, o certificado de discapacidad igual o superior al 64%. Empadronamiento en Meliana con al menos 1 año de antigüedad. Estar al corriente de obligaciones tributarias y con la Seguridad Social. No estar incurso en causas de exclusión según el artículo 13 de la Ley 38/2003.",
+  "descripcion": "La subvención tiene como objetivo sufragar parcialmente los gastos de adquisición de la Tarjeta Bonometro para fomentar el uso del transporte ferroviario entre personas mayores de 65 años o con un grado de discapacidad igual o superior al 64%. La ayuda cubre parte del coste del título de transporte de FGV, descontando del precio establecido en el convenio firmado entre el Ayuntamiento y FGV. Las personas beneficiarias deben aportar una parte del coste.",
+  "cuantia": [
+    {
+      "concepto": "Aportación beneficiarios mayores de 65 años",
+      "valor": "50",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Aportación beneficiarios con discapacidad igual o superior al 64%",
+      "valor": "50",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Subvención para mayores de 65 años",
+      "valor": "66,40",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Subvención para personas con discapacidad igual o superior al 64%",
+      "valor": "37,30",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Gasto de reactivación de tarjetas",
+      "valor": "2",
+      "unidad": "€"
+    },
+    {
+      "concepto": "Gasto de expedición de tarjetas nuevas",
+      "valor": "4",
+      "unidad": "€"
+    }
+  ],
+  "importe_maximo": [
+    {
+      "concepto": "Subvención máxima para mayores de 65 años",
+      "cantidad": "66,40 €"
+    },
+    {
+      "concepto": "Subvención máxima para personas con discapacidad igual o superior al 64%",
+      "cantidad": "37,30 €"
+    }
+  ],
+  "costes_no_subvencionables": "No se especifican costes no subvencionables en el documento.",
+  "resolucion": "El plazo máximo de resolución y notificación no está especificado. Silencio administrativo negativo.",
+  "documentos_presentar": [
+    {
+      "clave": "Instancia-solicitud",
+      "valor": "Según modelo adjunto como anexo I."
+    },
+    {
+      "clave": "Autorización para certificaciones telemáticas",
+      "valor": "La presentación de la instancia comportará autorización para obtener certificaciones de la AEAT y TGSS."
+    },
+    {
+      "clave": "DNI, NIE o pasaporte",
+      "valor": ""
+    },
+    {
+      "clave": "Certificado de discapacidad",
+      "valor": "Igual o superior al 64%."
+    },
+    {
+      "clave": "Fotografía reciente",
+      "valor": "En formato JPG para primera emisión o renovación de tarjeta caducada (solo presentación a través de la Sede Electrónica)."
+    }
+  ],
+  "normativa_reguladora": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones. BOP (Valencia) núm. 134, 16/07/2025.\n- Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones. BOP (Valencia) núm. 134, 16/07/2025.",
+  "referencia_legislativa": "- Ley 38/2003, de 17 de noviembre, General de Subvenciones.\n- Real Decreto 887/2006, de 21 de julio, por el que se aprueba el Reglamento de la Ley General de Subvenciones.",
+  "lugares_presentacion": {
+    "presencial": [
+      {
+        "clave": "Presencialmente en:",
+        "valor": "Centro de Servicios Sociales de Atención Primaria del Ayuntamiento de Meliana, calle Ramón y Cajal 4, 46133 Meliana (Valencia). Oficinas de correos para Registro de documentos según procedimiento administrativo (con el sobre abierto para compulsa de documentos). Registro de Ventanilla Única en el territorio Nacional."
+      }
+    ],
+    "online": [
+      {
+        "clave": "Electrónicamente en:",
+        "valor": "Sede Electrónica del Ayuntamiento de Meliana: https://meliana.sede.dival.es/. También puede presentarse a través de la Red SARA (Sistema de Aplicaciones y Redes para las Administraciones), una plataforma estatal segura que permite enviar solicitudes electrónicas a cualquier administración pública, usando certificado digital o sistema Cl@ve."
+      }
+    ]
+  },
+  "criterios_concesion": "",
+  "usuario": "MELIANA",
+  "fecha": "04/07/2025",
+  "frase_publicitaria": "Solicita tu Bonometro 2025/2026 y ahorra en transporte si eres mayor de 65 o tienes discapacidad. Infórmate ya."
+}
